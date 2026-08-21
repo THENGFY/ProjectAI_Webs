@@ -57,6 +57,115 @@
   border-bottom: 1px solid rgba(69, 70, 77, 0.3);
 }
 
+/* Dynamic Bright Light Running Beam for Logo */
+@keyframes logo-beam-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-beam-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5px;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 0 16px rgba(34, 211, 238, 0.25);
+  background: rgba(30, 41, 59, 0.6);
+  transition: all 0.3s ease;
+}
+
+.logo-beam-wrapper:hover {
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.5), 0 0 40px rgba(93, 230, 255, 0.3);
+}
+
+.logo-beam-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -150%;
+  background: conic-gradient(
+    from 0deg,
+    transparent 0%,
+    transparent 65%,
+    rgba(34, 211, 238, 0.15) 75%,
+    rgba(34, 211, 238, 0.7) 88%,
+    #5DE6FF 95%,
+    #FFFFFF 98%,
+    #FFFFFF 100%
+  );
+  animation: logo-beam-spin 2.8s linear infinite;
+  pointer-events: none;
+  filter: drop-shadow(0 0 6px #5DE6FF);
+}
+
+.logo-beam-inner {
+  position: relative;
+  z-index: 1;
+  background: #0B0F10;
+  border-radius: 7.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Dynamic Bright Light Sweep Animation for Headings */
+@keyframes text-light-sweep {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(
+    90deg,
+    #E0E3E5 0%,
+    #E0E3E5 20%,
+    #5DE6FF 35%,
+    #FFFFFF 45%,
+    #FFFFFF 50%,
+    #22D3EE 55%,
+    #E0E3E5 70%,
+    #E0E3E5 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: text-light-sweep 3.5s linear infinite;
+  display: inline-block;
+}
+
+.shimmer-text-cyan {
+  background: linear-gradient(
+    90deg,
+    #22D3EE 0%,
+    #22D3EE 20%,
+    #5DE6FF 35%,
+    #FFFFFF 45%,
+    #FFFFFF 50%,
+    #5DE6FF 55%,
+    #00CBE6 70%,
+    #22D3EE 100%
+  );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: text-light-sweep 3.5s linear infinite;
+  animation-delay: 0.25s;
+  display: inline-block;
+  filter: drop-shadow(0 0 20px rgba(34, 211, 238, 0.35));
+}
+
 /* Micro-Glow on Hover */
 .micro-glow {
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
@@ -133,3 +242,71 @@ input:focus, select:focus, textarea:focus {
 ::-webkit-scrollbar-thumb:hover {
   background: #22D3EE;
 }
+
+/* Mouse-Tracking Spotlight Glow */
+.spotlight-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.spotlight-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(400px circle at var(--mouse-x, -500px) var(--mouse-y, -500px), rgba(34, 211, 238, 0.15), transparent 45%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  border-radius: inherit;
+  z-index: 1;
+}
+
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+/* Accordion Smooth Height Transition */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  opacity: 0;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 250px;
+  opacity: 1;
+}
+
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+  color: #22D3EE;
+}
+
+/* Interactive Range Slider Accent */
+input[type=range] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #1D2022;
+  border: 1px solid rgba(69, 70, 77, 0.5);
+  border-radius: 9999px;
+  height: 8px;
+  outline: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #22D3EE;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(34, 211, 238, 0.8);
+  transition: transform 0.15s ease;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
