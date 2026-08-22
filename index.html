@@ -31,11 +31,11 @@
                   <!-- Logo -->
       <a href="/" class="flex items-center gap-2.5 group">
         <div class="logo-beam-wrapper group-hover:scale-105 transition-transform duration-300">
-          <div class="logo-beam-inner">
-            <img src="/image/ProjectAI_Logo_Cropped.png" alt="ProjectAI Logo" class="h-9 w-auto object-contain">
+          <div class="logo-beam-inner relative">
+            <img src="/image/ProjectAI_Logo_Base.png" alt="ProjectAI Logo" class="h-9 w-auto object-contain block">
+            <img src="/image/ProjectAI_Logo_Dot.png" alt="" class="logo-blinking-dot absolute inset-0 w-full h-full object-contain pointer-events-none" aria-hidden="true">
           </div>
         </div>
-        <span class="font-mono text-xs text-on-surface-variant tracking-widest uppercase font-semibold">LLP</span>
       </a>
 
 <!-- Desktop Nav Menu -->
@@ -108,6 +108,10 @@
         <div class="pt-6 flex flex-wrap items-center gap-6 text-xs font-mono text-on-surface-variant/80 border-t border-outline-variant/20">
           <div class="flex items-center gap-2">
             <span class="material-symbols-outlined text-secondary text-base">verified</span>
+            <span>ADVANCE PROFESSIONAL CERTIFIED IN DATA SCIENCE AND AI</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary text-base">verified</span>
             <span>PMP® CERTIFIED ADVISORS</span>
           </div>
           <div class="flex items-center gap-2">
@@ -124,16 +128,12 @@
           <div class="absolute -top-16 -right-16 w-48 h-48 bg-secondary/15 rounded-full blur-[80px]"></div>
           
           <!-- Terminal Header -->
-          <div class="flex items-center justify-between pb-4 mb-6 border-b border-outline-variant/30 font-mono text-sm text-on-surface-variant relative z-10">
-            <div class="flex items-center gap-2">
-              <span class="w-3.5 h-3.5 rounded-full bg-red-500/80 inline-block"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-yellow-500/80 inline-block"></span>
-              <span class="w-3.5 h-3.5 rounded-full bg-green-500/80 inline-block"></span>
-              <span class="ml-2 text-on-surface font-bold text-sm">PROJECTAI_CORE</span>
-            </div>
-            <div class="flex items-center gap-2 text-xs text-secondary">
-              <span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
-              <span>LIVE</span>
+          <div class="flex items-center pb-4 mb-6 border-b border-outline-variant/30 font-mono text-on-surface-variant relative z-10">
+            <div class="flex items-center gap-2 flex-wrap">
+              <span class="w-3.5 h-3.5 rounded-full bg-red-500/80 inline-block shrink-0"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-yellow-500/80 inline-block shrink-0"></span>
+              <span class="w-3.5 h-3.5 rounded-full bg-green-500/80 inline-block shrink-0"></span>
+              <span class="ml-2 text-on-surface font-bold text-base sm:text-lg tracking-wide">AGILE AI TRANSFORMATION SUITE</span>
             </div>
           </div>
 
@@ -176,7 +176,7 @@
               <div class="flex items-center gap-4">
                 <span class="material-symbols-outlined text-secondary text-3xl sm:text-4xl shrink-0">school</span>
                 <div>
-                  <div class="text-on-surface font-bold text-sm sm:text-base">Corporate PM &amp; AI Capability</div>
+                  <div class="text-on-surface font-bold text-sm sm:text-base">Corporate Project Management &amp; AI Capability</div>
                   <div class="text-xs text-on-surface-variant mt-0.5">Hands-on AI, Agile &amp; PMP Upskilling</div>
                 </div>
               </div>
@@ -188,43 +188,14 @@
     </div>
   </header>
 
-  <!-- Live Animated Telemetry Metrics Strip -->
-  <section class="py-8 border-y border-outline-variant/20 bg-surface-container-lowest/60">
-    <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center font-mono">
-        
-        <div class="space-y-1">
-          <div class="text-3xl sm:text-4xl font-extrabold text-secondary counter" data-target="85" data-prefix=">" data-suffix="%">> 0%</div>
-          <div class="text-xs text-on-surface-variant uppercase tracking-wider">Manual Labor Saved</div>
-        </div>
-
-        <div class="space-y-1">
-          <div class="text-3xl sm:text-4xl font-extrabold text-secondary counter" data-target="1480" data-suffix="+">0+</div>
-          <div class="text-xs text-on-surface-variant uppercase tracking-wider">Tasks Automated Daily</div>
-        </div>
-
-        <div class="space-y-1">
-          <div class="text-3xl sm:text-4xl font-extrabold text-secondary counter" data-target="100" data-suffix="%">0%</div>
-          <div class="text-xs text-on-surface-variant uppercase tracking-wider">Zero Data Leakage</div>
-        </div>
-
-        <div class="space-y-1">
-          <div class="text-3xl sm:text-4xl font-extrabold text-secondary counter" data-target="420" data-prefix="&lt; " data-suffix="ms">&lt; 0ms</div>
-          <div class="text-xs text-on-surface-variant uppercase tracking-wider">Pipeline Latency</div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
   <!-- Core Pillars: Bento Grid -->
   <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
     <div class="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
       <div class="max-w-2xl">
         <span class="font-mono text-xs text-secondary uppercase tracking-widest block mb-2">Our Capabilities</span>
-        <h2 class="font-display text-3xl md:text-5xl font-extrabold text-on-surface">Integrated AI &amp; PM Architecture</h2>
+        <h2 class="font-display text-3xl md:text-5xl font-extrabold text-on-surface">Integrated AI &amp; Project Management Architecture</h2>
         <p class="font-sans text-lg text-on-surface-variant mt-4">
-          We combine cutting-edge machine learning automation with the rigor of Fortune 500 project management frameworks to deliver measurable ROI.
+          We combine smart AI automation with battle-tested project management discipline to deliver clear, measurable time and cost savings for your business.
         </p>
       </div>
     </div>
@@ -240,10 +211,14 @@
           </div>
           <h3 class="font-display text-2xl font-bold text-on-surface mb-3">AI Transformation &amp; Workflow Automation</h3>
           <p class="font-sans text-on-surface-variant mb-6 leading-relaxed">
-            Implementing autonomous agentic workflows (utilizing n8n and Make.com) to automate redundant bottlenecks, streamline cross-department operations, and sync your CRM automatically.
+            Implementing autonomous agentic workflows to automate redundant bottlenecks, streamline cross-department operations, and sync your CRM automatically.
           </p>
           
           <ul class="space-y-3 font-mono text-xs text-on-surface mb-6">
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+              Utilizing n8n and Make.com
+            </li>
             <li class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
               Multi-Agent System Orchestration
@@ -271,9 +246,20 @@
           <p class="font-sans text-on-surface-variant leading-relaxed mb-6">
             Deploy secure company AI chatbots and document search engines with strictly isolated data. Guard your confidential IP with strict zero-data-leakage protocols.
           </p>
-          <div class="p-4 rounded bg-surface-container-lowest/80 border border-outline-variant/30 font-mono text-xs text-secondary mb-4">
-            Zero Public Training • On-Prem / VPC
-          </div>
+          <ul class="space-y-3 font-mono text-xs text-on-surface mb-6">
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+              Private Document &amp; Knowledge Search
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+              Zero Public Data Training &amp; Leakage
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+              On-Premise &amp; Secure VPC Deployment
+            </li>
+          </ul>
         </div>
         <a href="/ai-services" class="inline-flex items-center gap-2 font-mono text-xs text-secondary hover:underline relative z-10">
           <span>EXPLORE PRIVATE GENAI</span>
@@ -281,16 +267,30 @@
         </a>
       </div>
 
-      <!-- Card 3: Corporate PM & AI Training -->
+      <!-- Card 3: Corporate Project Management & AI Training -->
       <div class="md:col-span-5 glass-panel spotlight-card p-8 md:p-10 rounded-xl micro-glow flex flex-col justify-between">
         <div class="relative z-10">
           <div class="w-12 h-12 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary mb-6">
             <span class="material-symbols-outlined text-2xl">school</span>
           </div>
-          <h3 class="font-display text-2xl font-bold text-on-surface mb-3">Corporate PM &amp; AI Training</h3>
+          <h3 class="font-display text-2xl font-bold text-on-surface mb-3">Corporate Project Management &amp; AI Training</h3>
           <p class="font-sans text-on-surface-variant leading-relaxed mb-6">
-            Elevating your entire organization through hands-on AI tool adoption for all staff, specialized AI project management training, foundational bootcamps for non-PMs, and comprehensive PMP® exam preparation.
+            Elevating your entire organization through hands-on AI tool adoption for all staff, specialized AI project management training, and structured certification pathways.
           </p>
+          <ul class="space-y-3 font-mono text-xs text-on-surface mb-6">
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+              Hands-on AI Tool Adoption for Staff
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+              Bootcamps for Non-Project Managers
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+              Comprehensive PMP® Exam Preparation (If Necessary)
+            </li>
+          </ul>
         </div>
         <a href="/project-management" class="inline-flex items-center gap-2 font-mono text-xs text-secondary hover:underline relative z-10">
           <span>VIEW TRAINING SYLLABUS</span>
@@ -308,11 +308,25 @@
           <p class="font-sans text-on-surface-variant mb-6 leading-relaxed">
             Continuous prompt tuning, system maintenance, and performance monitoring. We act as your outsourced AI engineering team so your systems stay resilient and up to date.
           </p>
+          <ul class="space-y-3 font-mono text-xs text-on-surface mb-6">
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+              24/7 Real-Time Pipeline Monitoring
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+              Continuous Prompt &amp; Model Optimization
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+              Rapid SLA-Backed Incident Resolution
+            </li>
+          </ul>
         </div>
-        <div class="flex flex-wrap gap-2 font-mono text-xs relative z-10">
-          <span class="px-3 py-1 rounded bg-surface-container-high border border-outline-variant/30 text-secondary">24/7 Monitoring</span>
-          <span class="px-3 py-1 rounded bg-surface-container-high border border-outline-variant/30 text-secondary">&lt; 15min SLA Response</span>
-        </div>
+        <a href="/contact" class="inline-flex items-center gap-2 font-mono text-xs text-secondary hover:underline relative z-10">
+          <span>DISCUSS MANAGED OPERATIONS</span>
+          <span class="material-symbols-outlined text-xs">arrow_forward</span>
+        </a>
       </div>
 
     </div>
@@ -347,7 +361,7 @@
           2. WHATSAPP &amp; CRM FUNNEL
         </button>
         <button id="tab-btn-rag" onclick="setSimTab('rag')" class="flex-1 py-3 px-4 rounded-lg font-bold transition-all text-center text-on-surface-variant hover:text-secondary">
-          3. PRIVATE COMPANY RAG
+          3. PRIVATE KNOWLEDGE BASE
         </button>
       </div>
 
@@ -505,18 +519,18 @@
         <div class="space-y-4">
           <div class="flex items-center gap-2.5">
             <div class="logo-beam-wrapper">
-              <div class="logo-beam-inner">
-                <img src="/image/ProjectAI_Logo_Cropped.png" alt="ProjectAI Logo" class="h-7 w-auto object-contain">
+              <div class="logo-beam-inner relative">
+                <img src="/image/ProjectAI_Logo_Base.png" alt="ProjectAI Logo" class="h-7 w-auto object-contain block">
+                <img src="/image/ProjectAI_Logo_Dot.png" alt="" class="logo-blinking-dot absolute inset-0 w-full h-full object-contain pointer-events-none" aria-hidden="true">
               </div>
             </div>
-            <span class="font-mono text-xs text-on-surface-variant tracking-widest uppercase font-semibold">LLP</span>
           </div>
           <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
             Helping Singapore SMEs eliminate operational bottlenecks and scale productivity through practical AI implementation and project excellence.
           </p>
           <div class="font-mono text-xs text-on-surface-variant">
             <div class="text-on-surface font-semibold">Office Address:</div>
-            ProjectAI LLP<br>
+            ProjectAI<br>
             60 Paya Lebar Road, #06-53,<br>
             Paya Lebar Square,<br>
             Singapore 409051
@@ -529,7 +543,7 @@
           <ul class="space-y-2 text-xs font-sans text-on-surface-variant">
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Workflow Automation (n8n/Make)</a></li>
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Secure Enterprise GenAI</a></li>
-            <li><a href="/project-management" class="hover:text-secondary transition-colors">Corporate PM &amp; PMP® Training</a></li>
+            <li><a href="/project-management" class="hover:text-secondary transition-colors">Corporate Project Management &amp; PMP® Training</a></li>
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Managed AI Operations</a></li>
           </ul>
         </div>
@@ -564,7 +578,7 @@
       </div>
 
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-on-surface-variant">
-        <div>© 2024 ProjectAI LLP. All rights reserved.</div>
+        <div>© 2024 ProjectAI. All rights reserved.</div>
         <div class="flex gap-6">
           <a href="/contact" class="hover:text-secondary transition-colors">Privacy Policy</a>
           <a href="/contact" class="hover:text-secondary transition-colors">Terms of Service</a>

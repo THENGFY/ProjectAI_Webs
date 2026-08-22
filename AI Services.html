@@ -1,71 +1,95 @@
 <!DOCTYPE html>
 <html class="dark" lang="en">
+
 <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>AI Services &amp; Workflow Automation | ProjectAI</title>
-  <meta name="description" content="Custom agentic workflows (n8n/Make), private enterprise GenAI, predictive analytics, and managed MLOps engineered specifically for Singapore SMEs."/>
-  
+  <meta name="description"
+    content="Custom agentic workflows (n8n/Make), private enterprise GenAI, predictive analytics, and managed MLOps engineered specifically for Singapore SMEs." />
+
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    rel="stylesheet">
+
   <!-- App Styles -->
   <link rel="stylesheet" href="/src/style.css">
 </head>
-<body class="bg-surface-container-lowest text-on-surface font-sans selection:bg-secondary/30 selection:text-secondary relative min-h-screen">
+
+<body
+  class="bg-surface-container-lowest text-on-surface font-sans selection:bg-secondary/30 selection:text-secondary relative min-h-screen">
 
   <!-- Ambient High-Tech Background -->
   <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
     <div class="absolute inset-0 bg-[#0B0F10]"></div>
     <div class="absolute inset-[-100%] bg-data-grid opacity-30"></div>
-    <div class="absolute top-1/3 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[140px] mix-blend-screen animate-pulse-slow"></div>
-    <div class="absolute bottom-1/4 -left-32 w-96 h-96 bg-secondary-container/10 rounded-full blur-[150px] mix-blend-screen"></div>
+    <div
+      class="absolute top-1/3 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[140px] mix-blend-screen animate-pulse-slow">
+    </div>
+    <div
+      class="absolute bottom-1/4 -left-32 w-96 h-96 bg-secondary-container/10 rounded-full blur-[150px] mix-blend-screen">
+    </div>
   </div>
 
   <!-- Global Header Navigation -->
   <nav class="fixed top-0 w-full z-50 nav-blur transition-all duration-300">
-    <div class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
-                  <!-- Logo -->
+    <div
+      class="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+      <!-- Logo -->
       <a href="/" class="flex items-center gap-2.5 group">
         <div class="logo-beam-wrapper group-hover:scale-105 transition-transform duration-300">
-          <div class="logo-beam-inner">
-            <img src="/image/ProjectAI_Logo_Cropped.png" alt="ProjectAI Logo" class="h-9 w-auto object-contain">
+          <div class="logo-beam-inner relative">
+            <img src="/image/ProjectAI_Logo_Base.png" alt="ProjectAI Logo" class="h-9 w-auto object-contain block">
+            <img src="/image/ProjectAI_Logo_Dot.png" alt=""
+              class="logo-blinking-dot absolute inset-0 w-full h-full object-contain pointer-events-none"
+              aria-hidden="true">
           </div>
         </div>
-        <span class="font-mono text-xs text-on-surface-variant tracking-widest uppercase font-semibold">LLP</span>
       </a>
 
-<!-- Desktop Nav Menu -->
+      <!-- Desktop Nav Menu -->
       <div class="hidden md:flex items-center gap-8">
-        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm font-medium tracking-wide" href="/">Home</a>
-        <a class="text-secondary font-semibold border-b-2 border-secondary pb-1 text-sm tracking-wide transition-all" href="/ai-services">AI Services</a>
-        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm font-medium tracking-wide" href="/project-management">Project Management</a>
-        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm font-medium tracking-wide" href="/contact">Contact</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm font-medium tracking-wide"
+          href="/">Home</a>
+        <a class="text-secondary font-semibold border-b-2 border-secondary pb-1 text-sm tracking-wide transition-all"
+          href="/ai-services">AI Services</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm font-medium tracking-wide"
+          href="/project-management">Project Management</a>
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm font-medium tracking-wide"
+          href="/contact">Contact</a>
       </div>
 
       <!-- Action Button & Mobile Toggle -->
       <div class="flex items-center gap-4">
-        <a href="/contact" class="hidden sm:inline-flex items-center gap-2 bg-secondary text-on-secondary px-6 py-2.5 rounded font-semibold text-sm transition-all active:scale-95 hover:bg-secondary-container btn-glow shadow-[0_0_20px_rgba(34,211,238,0.25)]">
+        <a href="/contact"
+          class="hidden sm:inline-flex items-center gap-2 bg-secondary text-on-secondary px-6 py-2.5 rounded font-semibold text-sm transition-all active:scale-95 hover:bg-secondary-container btn-glow shadow-[0_0_20px_rgba(34,211,238,0.25)]">
           <span>Book Consultation</span>
           <span class="material-symbols-outlined text-sm">arrow_forward</span>
         </a>
 
-        <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 text-on-surface-variant hover:text-secondary focus:outline-none">
+        <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu"
+          class="md:hidden p-2 text-on-surface-variant hover:text-secondary focus:outline-none">
           <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
       </div>
     </div>
 
     <!-- Mobile Drawer Menu -->
-    <div id="mobileMenu" class="hidden md:hidden bg-surface-container-high/95 backdrop-blur-xl border-b border-outline-variant/30 px-6 py-6 space-y-4">
+    <div id="mobileMenu"
+      class="hidden md:hidden bg-surface-container-high/95 backdrop-blur-xl border-b border-outline-variant/30 px-6 py-6 space-y-4">
       <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/">Home</a>
-      <a class="block text-secondary font-semibold text-base py-2 border-l-2 border-secondary pl-3" href="/ai-services">AI Services</a>
-      <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/project-management">Project Management</a>
+      <a class="block text-secondary font-semibold text-base py-2 border-l-2 border-secondary pl-3"
+        href="/ai-services">AI Services</a>
+      <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3"
+        href="/project-management">Project Management</a>
       <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/contact">Contact</a>
-      <a href="/contact" class="block w-full text-center bg-secondary text-on-secondary py-3 rounded font-semibold text-sm mt-4">
+      <a href="/contact"
+        class="block w-full text-center bg-secondary text-on-secondary py-3 rounded font-semibold text-sm mt-4">
         Book Consultation
       </a>
     </div>
@@ -74,7 +98,8 @@
   <!-- Hero Header -->
   <main class="pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
     <header class="mb-20 max-w-3xl">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs uppercase tracking-widest mb-6">
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs uppercase tracking-widest mb-6">
         <span class="material-symbols-outlined text-sm">memory</span>
         ENGINEERED FOR SINGAPORE SMES
       </div>
@@ -85,104 +110,129 @@
         </span>
       </h1>
       <p class="font-sans text-lg text-on-surface-variant leading-relaxed">
-        We eliminate operational bottlenecks through customized agentic workflows, private enterprise GenAI, and continuous monitoring designed to save time, reduce labor overhead, and scale output.
+        We eliminate operational bottlenecks through customized agentic workflows, private enterprise GenAI, and
+        continuous monitoring designed to save time, reduce labor overhead, and scale output.
       </p>
     </header>
 
     <!-- Architecture Comparison: Prototype Sandbox vs Enterprise Production -->
     <section class="mb-24">
       <div class="text-center max-w-2xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs uppercase tracking-widest mb-4">
+        <div
+          class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs uppercase tracking-widest mb-4">
           <span class="material-symbols-outlined text-sm">compare_arrows</span>
           THE PRODUCTION REALITY GAP
         </div>
         <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight mb-4 leading-tight">
           Most Teams Can Demo AI.<br>
-          <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-[#5DE6FF] to-secondary-container">Few Can Run It Inside Production.</span>
+          <span
+            class="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-[#5DE6FF] to-secondary-container">Few
+            Can Run It Inside Production.</span>
         </h2>
         <p class="font-sans text-sm text-on-surface-variant leading-relaxed">
-          80% of AI initiatives stall because sandbox chat prototypes lack security, CRM integrations, and error recovery. Here is how ProjectAI bridges the gap.
+          80% of AI initiatives stall because sandbox chat prototypes lack security, CRM integrations, and error
+          recovery. Here is how ProjectAI bridges the gap.
         </p>
       </div>
 
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-        
+
         <!-- Left: Fragile Prototype Trap -->
-        <div class="p-8 md:p-10 rounded-2xl bg-surface-container-lowest/90 border border-error/25 relative overflow-hidden group">
+        <div
+          class="p-8 md:p-10 rounded-2xl bg-surface-container-lowest/90 border border-error/25 relative overflow-hidden group">
           <div class="absolute top-0 right-0 w-36 h-36 bg-error/5 rounded-full blur-2xl pointer-events-none"></div>
           <div class="flex items-center justify-between mb-6 pb-4 border-b border-outline-variant/20">
             <div class="flex items-center gap-3">
-              <div class="w-8 h-8 rounded-lg bg-error/10 border border-error/30 flex items-center justify-center text-error">
+              <div
+                class="w-8 h-8 rounded-lg bg-error/10 border border-error/30 flex items-center justify-center text-error">
                 <span class="material-symbols-outlined text-base">close</span>
               </div>
-              <span class="font-mono text-xs font-bold text-error uppercase tracking-widest">The Sandbox Demo Trap</span>
+              <span class="font-mono text-xs font-bold text-error uppercase tracking-widest">The Sandbox Demo
+                Trap</span>
             </div>
-            <span class="font-mono text-[11px] text-on-surface-variant bg-surface-container px-2.5 py-1 rounded border border-outline-variant/30">Fragile Prototype</span>
+            <span
+              class="font-mono text-[11px] text-on-surface-variant bg-surface-container px-2.5 py-1 rounded border border-outline-variant/30">Fragile
+              Prototype</span>
           </div>
 
           <h3 class="font-display text-xl font-bold text-on-surface mb-3 tracking-tight">
             Why 80% of Internal AI Projects Stall
           </h3>
           <p class="font-sans text-sm text-on-surface-variant mb-6 leading-relaxed">
-            Quick chat demos look impressive in meetings, but break immediately when connected to messy enterprise data, strict compliance guidelines, and real customer traffic.
+            Quick chat demos look impressive in meetings, but break immediately when connected to messy enterprise data,
+            strict compliance guidelines, and real customer traffic.
           </p>
 
           <ul class="space-y-4 font-sans text-xs text-on-surface-variant">
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">cancel</span>
-              <span><strong class="text-on-surface font-semibold">Isolated Chat Interface:</strong> AI is trapped in a web tab; not wired to ERP, HubSpot, Xero, or PostgreSQL databases.</span>
+              <span><strong class="text-on-surface font-semibold">Isolated Chat Interface:</strong> AI is trapped in a
+                web tab; not wired to ERP, HubSpot, Xero, or PostgreSQL databases.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">cancel</span>
-              <span><strong class="text-on-surface font-semibold">Data Leakage &amp; Compliance Risks:</strong> Public LLM endpoints train on sensitive corporate financials and customer PII.</span>
+              <span><strong class="text-on-surface font-semibold">Data Leakage &amp; Compliance Risks:</strong> Public
+                LLM endpoints train on sensitive corporate financials and customer PII.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">cancel</span>
-              <span><strong class="text-on-surface font-semibold">Zero Guardrails or RBAC:</strong> Hallucinations go unchecked without audit logs or employee permission controls.</span>
+              <span><strong class="text-on-surface font-semibold">Zero Guardrails or RBAC:</strong> Hallucinations go
+                unchecked without audit logs or employee permission controls.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">cancel</span>
-              <span><strong class="text-on-surface font-semibold">Orphaned Code:</strong> No internal team owns, monitors, or updates prompt drift when APIs and schemas change.</span>
+              <span><strong class="text-on-surface font-semibold">Orphaned Code:</strong> No internal team owns,
+                monitors, or updates prompt drift when APIs and schemas change.</span>
             </li>
           </ul>
         </div>
 
         <!-- Right: ProjectAI Production Engine -->
-        <div class="p-8 md:p-10 rounded-2xl glass-panel-elevated border border-secondary/40 relative overflow-hidden group shadow-[0_0_30px_rgba(34,211,238,0.12)]">
+        <div
+          class="p-8 md:p-10 rounded-2xl glass-panel-elevated border border-secondary/40 relative overflow-hidden group shadow-[0_0_30px_rgba(34,211,238,0.12)]">
           <div class="absolute top-0 right-0 w-44 h-44 bg-secondary/15 rounded-full blur-3xl pointer-events-none"></div>
           <div class="flex items-center justify-between mb-6 pb-4 border-b border-outline-variant/30">
             <div class="flex items-center gap-3">
-              <div class="w-8 h-8 rounded-lg bg-secondary/20 border border-secondary/40 flex items-center justify-center text-secondary">
+              <div
+                class="w-8 h-8 rounded-lg bg-secondary/20 border border-secondary/40 flex items-center justify-center text-secondary">
                 <span class="material-symbols-outlined text-base">check</span>
               </div>
-              <span class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">ProjectAI Enterprise Engine</span>
+              <span class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">ProjectAI Enterprise
+                Engine</span>
             </div>
-            <span class="font-mono text-[11px] text-secondary bg-secondary/10 border border-secondary/30 px-2.5 py-1 rounded">Production Ready</span>
+            <span
+              class="font-mono text-[11px] text-secondary bg-secondary/10 border border-secondary/30 px-2.5 py-1 rounded">Production
+              Ready</span>
           </div>
 
           <h3 class="font-display text-xl font-bold text-on-surface mb-3 tracking-tight">
             Automation That Actually Runs Your Business
           </h3>
           <p class="font-sans text-sm text-on-surface-variant mb-6 leading-relaxed">
-            We build secure, hardened AI pipelines integrated with your live systems, backed by governance, SLAs, and private data isolation.
+            We build secure, hardened AI pipelines integrated with your live systems, backed by governance, SLAs, and
+            private data isolation.
           </p>
 
           <ul class="space-y-4 font-sans text-xs text-on-surface-variant">
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">verified</span>
-              <span><strong class="text-on-surface font-semibold">Embedded Workflow Orchestration:</strong> Autonomous n8n/Make engines wired into HubSpot, Salesforce, Xero, and Slack.</span>
+              <span><strong class="text-on-surface font-semibold">Embedded Workflow Orchestration:</strong> Autonomous
+                n8n/Make engines wired into HubSpot, Salesforce, Xero, and Slack.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">verified</span>
-              <span><strong class="text-on-surface font-semibold">Zero Data Retention (ZDR):</strong> Private vector databases and encrypted perimeters guarantee strict PDPA compliance.</span>
+              <span><strong class="text-on-surface font-semibold">Zero Data Retention (ZDR):</strong> Private vector
+                databases and encrypted perimeters guarantee strict PDPA compliance.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">verified</span>
-              <span><strong class="text-on-surface font-semibold">Enterprise RBAC &amp; Fallbacks:</strong> Multi-tier validation loops prevent hallucinations with full audit logs.</span>
+              <span><strong class="text-on-surface font-semibold">Enterprise RBAC &amp; Fallbacks:</strong> Multi-tier
+                validation loops prevent hallucinations with full audit logs.</span>
             </li>
             <li class="flex items-start gap-3">
               <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">verified</span>
-              <span><strong class="text-on-surface font-semibold">24/7 Managed Operations:</strong> Continuous model monitoring, prompt tuning, and SLA-backed engineering support.</span>
+              <span><strong class="text-on-surface font-semibold">24/7 Managed Operations:</strong> Continuous model
+                monitoring, prompt tuning, and SLA-backed engineering support.</span>
             </li>
           </ul>
         </div>
@@ -192,17 +242,20 @@
 
     <!-- Services Detailed Grid -->
     <div class="space-y-16">
-      
+
       <!-- Service 01: Workflow Automation & Agentic Orchestration -->
       <section class="glass-panel p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div class="lg:col-span-7 space-y-6">
-            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 01 // CORE AUTOMATION</span>
+            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 01 // CORE
+              AUTOMATION</span>
             <h2 class="font-display text-2xl sm:text-3xl font-bold text-on-surface">
               Workflow Automation &amp; Agentic AI Orchestration
             </h2>
             <p class="font-sans text-on-surface-variant leading-relaxed">
-              We engineer custom autonomous agent pipelines leveraging enterprise n8n and Make.com integrations. From customer inquiry qualification and automatic quote generation to CRM synchronization and multi-tier approvals, we remove human latency from your core business loops.
+              We engineer custom autonomous agent pipelines leveraging enterprise n8n and Make.com integrations. From
+              customer inquiry qualification and automatic quote generation to CRM synchronization and multi-tier
+              approvals, we remove human latency from your core business loops.
             </p>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 font-mono text-xs">
@@ -218,16 +271,22 @@
           </div>
 
           <div class="lg:col-span-5">
-            <div class="p-6 rounded-xl bg-surface-container-lowest/90 border border-outline-variant/40 font-mono text-xs space-y-3">
-              <div class="text-secondary font-bold flex items-center justify-between border-b border-outline-variant/30 pb-2">
+            <div
+              class="p-6 rounded-xl bg-surface-container-lowest/90 border border-outline-variant/40 font-mono text-xs space-y-3">
+              <div
+                class="text-secondary font-bold flex items-center justify-between border-b border-outline-variant/30 pb-2">
                 <span>PIPELINE_AGENT_STATUS</span>
                 <span class="text-green-400">● RUNNING</span>
               </div>
               <div class="space-y-2 text-on-surface-variant">
-                <div class="flex justify-between"><span>Trigger:</span><span class="text-on-surface">New Webhook Ingestion</span></div>
-                <div class="flex justify-between"><span>Model:</span><span class="text-on-surface">Claude 3.5 / GPT-4o</span></div>
-                <div class="flex justify-between"><span>Execution Time:</span><span class="text-secondary">420ms</span></div>
-                <div class="flex justify-between"><span>Error Rate:</span><span class="text-secondary">0.00%</span></div>
+                <div class="flex justify-between"><span>Trigger:</span><span class="text-on-surface">New Webhook
+                    Ingestion</span></div>
+                <div class="flex justify-between"><span>Model:</span><span class="text-on-surface">Claude 3.5 /
+                    GPT-4o</span></div>
+                <div class="flex justify-between"><span>Execution Time:</span><span class="text-secondary">420ms</span>
+                </div>
+                <div class="flex justify-between"><span>Error Rate:</span><span class="text-secondary">0.00%</span>
+                </div>
               </div>
               <div class="pt-2 border-t border-outline-variant/20">
                 <div class="text-[11px] text-on-surface font-semibold mb-1">Processed Today: 1,482 Tasks</div>
@@ -244,12 +303,15 @@
       <section class="glass-panel p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div class="lg:col-span-7 space-y-6">
-            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 02 // SECURE INTELLIGENCE</span>
+            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 02 // SECURE
+              INTELLIGENCE</span>
             <h2 class="font-display text-2xl sm:text-3xl font-bold text-on-surface">
               Secure Company GenAI &amp; Internal Knowledge Base
             </h2>
             <p class="font-sans text-on-surface-variant leading-relaxed">
-              Deploy your own company AI chatbot and document search engine with zero data leakage. Your confidential contracts, SOPs, financial records, and client archives are vectorized inside your private perimeter, enabling instant, hallucination-free retrieval for your staff.
+              Deploy your own company AI chatbot and document search engine with zero data leakage. Your confidential
+              contracts, SOPs, financial records, and client archives are vectorized inside your private perimeter,
+              enabling instant, hallucination-free retrieval for your staff.
             </p>
 
             <ul class="space-y-2.5 font-mono text-xs text-on-surface">
@@ -269,14 +331,17 @@
           </div>
 
           <div class="lg:col-span-5">
-            <div class="p-6 rounded-xl bg-surface-container-lowest/90 border border-outline-variant/40 font-mono text-xs space-y-4">
-              <div class="text-on-surface font-bold flex items-center justify-between border-b border-outline-variant/30 pb-2">
+            <div
+              class="p-6 rounded-xl bg-surface-container-lowest/90 border border-outline-variant/40 font-mono text-xs space-y-4">
+              <div
+                class="text-on-surface font-bold flex items-center justify-between border-b border-outline-variant/30 pb-2">
                 <span class="text-secondary">PROJECTAI DATA GATEWAY</span>
                 <span class="text-[11px] text-on-surface-variant">TIER-4 ENCRYPTED</span>
               </div>
               <div class="p-3 rounded bg-surface-container-high/60 border border-outline-variant/20">
                 <div class="text-[11px] text-secondary mb-1">Query: "Extract Section 4 SLA from Q2 Vendor Master"</div>
-                <div class="text-xs text-on-surface leading-relaxed">"Found in doc_id #8491 (Confidence: 99.4%). Vendor SLA response threshold is under 30 minutes with penalty clause active."</div>
+                <div class="text-xs text-on-surface leading-relaxed">"Found in doc_id #8491 (Confidence: 99.4%). Vendor
+                  SLA response threshold is under 30 minutes with penalty clause active."</div>
               </div>
               <div class="text-[11px] text-on-surface-variant flex justify-between">
                 <span>Latency: 82ms</span>
@@ -291,25 +356,37 @@
       <section class="glass-panel p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div class="lg:col-span-7 space-y-6">
-            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 03 // PREDICTIVE ANALYTICS</span>
+            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 03 // PREDICTIVE
+              ANALYTICS</span>
             <h2 class="font-display text-2xl sm:text-3xl font-bold text-on-surface">
               Predictive Modeling &amp; Intelligent Document Parsing
             </h2>
             <p class="font-sans text-on-surface-variant leading-relaxed">
-              Transform unstructured receipts, invoices, customs documents, and operational time-series data into clean actionable insights. Our predictive engines forecast demand spikes and automate manual data entry with 99.9% accuracy.
+              Transform unstructured receipts, invoices, customs documents, and operational time-series data into clean
+              actionable insights. Our predictive engines forecast demand spikes and automate manual data entry with
+              99.9% accuracy.
             </p>
-            
+
             <div class="flex flex-wrap gap-3 font-mono text-xs">
-              <span class="px-3 py-1.5 rounded bg-surface-container-high border border-outline-variant/30 text-secondary">OCR + Multi-modal LLMs</span>
-              <span class="px-3 py-1.5 rounded bg-surface-container-high border border-outline-variant/30 text-secondary">Inventory Forecasting</span>
-              <span class="px-3 py-1.5 rounded bg-surface-container-high border border-outline-variant/30 text-secondary">Churn Prevention</span>
+              <span
+                class="px-3 py-1.5 rounded bg-surface-container-high border border-outline-variant/30 text-secondary">OCR
+                + Multi-modal LLMs</span>
+              <span
+                class="px-3 py-1.5 rounded bg-surface-container-high border border-outline-variant/30 text-secondary">Inventory
+                Forecasting</span>
+              <span
+                class="px-3 py-1.5 rounded bg-surface-container-high border border-outline-variant/30 text-secondary">Churn
+                Prevention</span>
             </div>
           </div>
 
-          <div class="lg:col-span-5 text-center p-8 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30">
+          <div
+            class="lg:col-span-5 text-center p-8 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30">
             <div class="font-mono text-4xl md:text-5xl font-bold text-secondary mb-2">&gt; 85%</div>
-            <div class="font-mono text-xs text-on-surface-variant uppercase tracking-wider mb-4">Manual Processing Time Saved</div>
-            <p class="text-xs text-on-surface-variant">Validated across logistics, trade, and accounting clients in Singapore.</p>
+            <div class="font-mono text-xs text-on-surface-variant uppercase tracking-wider mb-4">Manual Processing Time
+              Saved</div>
+            <p class="text-xs text-on-surface-variant">Validated across logistics, trade, and accounting clients in
+              Singapore.</p>
           </div>
         </div>
       </section>
@@ -318,17 +395,20 @@
       <section class="glass-panel p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           <div class="lg:col-span-7 space-y-6">
-            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 04 // CONTINUOUS RELIABILITY</span>
+            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 04 // CONTINUOUS
+              RELIABILITY</span>
             <h2 class="font-display text-2xl sm:text-3xl font-bold text-on-surface">
               Managed AI Operations, Maintenance &amp; Monitoring
             </h2>
             <p class="font-sans text-on-surface-variant leading-relaxed">
-              AI workflows require ongoing prompt refinement, model drift monitoring, and platform updates. We act as your dedicated fractional AI engineering team, guaranteeing high uptime and SLA commitments.
+              AI workflows require ongoing prompt refinement, model drift monitoring, and platform updates. We act as
+              your dedicated fractional AI engineering team, guaranteeing high uptime and SLA commitments.
             </p>
           </div>
 
           <div class="lg:col-span-5 flex flex-col sm:flex-row gap-4 justify-end">
-            <a href="/contact" class="bg-secondary text-on-secondary px-8 py-4 rounded font-bold text-sm text-center btn-glow shadow-[0_0_20px_rgba(34,211,238,0.3)]">
+            <a href="/contact"
+              class="bg-secondary text-on-secondary px-8 py-4 rounded font-bold text-sm text-center btn-glow shadow-[0_0_20px_rgba(34,211,238,0.3)]">
               Inquire Managed Tiers
             </a>
           </div>
@@ -342,13 +422,17 @@
       <span class="font-mono text-xs text-on-surface-variant uppercase tracking-widest block mb-8">
         Enterprise Stacks &amp; Frameworks We Deploy
       </span>
-      <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70 font-mono text-sm text-on-surface">
+      <div
+        class="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70 font-mono text-sm text-on-surface">
         <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>n8n Enterprise</div>
         <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>Make.com</div>
         <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>LangChain</div>
-        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>Llama 3 &amp; Claude 3.5</div>
-        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>pgvector / Qdrant</div>
-        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>Docker &amp; Kubernetes</div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>Llama 3 &amp; Claude
+          3.5</div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>pgvector / Qdrant
+        </div>
+        <div class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-secondary"></span>Docker &amp;
+          Kubernetes</div>
       </div>
     </section>
 
@@ -362,7 +446,9 @@
         <a href="/contact" class="bg-secondary text-on-secondary px-8 py-4 rounded font-bold text-sm btn-glow">
           Book AI Scoping Call
         </a>
-        <a href="https://wa.me/6567890123?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20AI%20Services." target="_blank" rel="noopener noreferrer" class="border border-[#25D366]/40 text-[#25D366] px-8 py-4 rounded font-mono text-sm flex items-center justify-center gap-2 hover:bg-[#25D366]/10 transition-colors">
+        <a href="https://wa.me/6567890123?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20AI%20Services."
+          target="_blank" rel="noopener noreferrer"
+          class="border border-[#25D366]/40 text-[#25D366] px-8 py-4 rounded font-mono text-sm flex items-center justify-center gap-2 hover:bg-[#25D366]/10 transition-colors">
           <span>Chat on WhatsApp</span>
         </a>
       </div>
@@ -373,23 +459,26 @@
   <footer class="bg-surface-container-lowest border-t border-outline-variant/20 pt-16 pb-12">
     <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-outline-variant/20">
-        
-                        <!-- Column 1: Brand -->
+
+        <!-- Column 1: Brand -->
         <div class="space-y-4">
           <div class="flex items-center gap-2.5">
             <div class="logo-beam-wrapper">
-              <div class="logo-beam-inner">
-                <img src="/image/ProjectAI_Logo_Cropped.png" alt="ProjectAI Logo" class="h-7 w-auto object-contain">
+              <div class="logo-beam-inner relative">
+                <img src="/image/ProjectAI_Logo_Base.png" alt="ProjectAI Logo" class="h-7 w-auto object-contain block">
+                <img src="/image/ProjectAI_Logo_Dot.png" alt=""
+                  class="logo-blinking-dot absolute inset-0 w-full h-full object-contain pointer-events-none"
+                  aria-hidden="true">
               </div>
             </div>
-            <span class="font-mono text-xs text-on-surface-variant tracking-widest uppercase font-semibold">LLP</span>
           </div>
           <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
-            Helping Singapore SMEs eliminate operational bottlenecks and scale productivity through practical AI implementation and project excellence.
+            Helping Singapore SMEs eliminate operational bottlenecks and scale productivity through practical AI
+            implementation and project excellence.
           </p>
           <div class="font-mono text-xs text-on-surface-variant">
             <div class="text-on-surface font-semibold">Office Address:</div>
-            ProjectAI LLP<br>
+            ProjectAI<br>
             60 Paya Lebar Road, #06-53,<br>
             Paya Lebar Square,<br>
             Singapore 409051
@@ -400,9 +489,11 @@
         <div class="space-y-3">
           <h4 class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">Solutions</h4>
           <ul class="space-y-2 text-xs font-sans text-on-surface-variant">
-            <li><a href="/ai-services" class="hover:text-secondary transition-colors">Workflow Automation (n8n/Make)</a></li>
+            <li><a href="/ai-services" class="hover:text-secondary transition-colors">Workflow Automation (n8n/Make)</a>
+            </li>
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Secure Enterprise GenAI</a></li>
-            <li><a href="/project-management" class="hover:text-secondary transition-colors">Corporate PM &amp; PMP® Training</a></li>
+            <li><a href="/project-management" class="hover:text-secondary transition-colors">Corporate Project
+                Management &amp; PMP® Training</a></li>
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Managed AI Operations</a></li>
           </ul>
         </div>
@@ -425,10 +516,9 @@
             <div>Phone: +65 6789 0123</div>
             <div>Email: advisory@projectai.sg</div>
           </div>
-          <a href="https://wa.me/6567890123?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20services." 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             class="inline-flex items-center gap-2 px-3 py-2 rounded bg-[#25D366]/10 border border-[#25D366]/40 text-[#25D366] text-xs font-mono hover:bg-[#25D366]/20 transition-colors">
+          <a href="https://wa.me/6567890123?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20services."
+            target="_blank" rel="noopener noreferrer"
+            class="inline-flex items-center gap-2 px-3 py-2 rounded bg-[#25D366]/10 border border-[#25D366]/40 text-[#25D366] text-xs font-mono hover:bg-[#25D366]/20 transition-colors">
             <span class="w-2 h-2 rounded-full bg-[#25D366] animate-ping"></span>
             <span>WhatsApp Business Online</span>
           </a>
@@ -436,8 +526,9 @@
 
       </div>
 
-      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-on-surface-variant">
-        <div>© 2024 ProjectAI LLP. All rights reserved.</div>
+      <div
+        class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-on-surface-variant">
+        <div>© 2024 ProjectAI. All rights reserved.</div>
         <div class="flex gap-6">
           <a href="/contact" class="hover:text-secondary transition-colors">Privacy Policy</a>
           <a href="/contact" class="hover:text-secondary transition-colors">Terms of Service</a>
@@ -459,4 +550,5 @@
   </script>
 
 </body>
+
 </html>
