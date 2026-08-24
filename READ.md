@@ -93,7 +93,7 @@ Anchored in [DESIGN.md](file:///home/mille/TFYProject/ProjectAI_Website/DESIGN.m
 
 1. **Left-Column WhatsApp Business Card**:
    - Live online status indicator with pulsing green dot.
-   - Pre-filled inquiry URL deep-linking to `https://wa.me/6567890123`.
+   - Pre-filled inquiry URL deep-linking to `https://wa.me/6589076453`.
    - Hover illumination matching the enterprise glassmorphic aesthetic.
 2. **Floating Quick-Action Chat Button**:
    - Fixed at `bottom-6 right-6` with active glow.
