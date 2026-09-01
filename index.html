@@ -20,9 +20,11 @@
   <!-- Ambient High-Tech Background -->
   <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
     <div class="absolute inset-0 bg-[#0B0F10]"></div>
-    <div class="absolute inset-[-100%] bg-data-grid opacity-30"></div>
-    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-secondary/10 rounded-full blur-[140px] mix-blend-screen animate-pulse-slow"></div>
-    <div class="absolute bottom-1/3 -right-32 w-[32rem] h-[32rem] bg-secondary-container/10 rounded-full blur-[160px] mix-blend-screen"></div>
+    <!-- Translucent AI Neural Mesh Image Layer (Groundup.ai style) -->
+    <div class="absolute inset-0 bg-neural-mesh"></div>
+    <div class="absolute inset-[-100%] bg-data-grid opacity-25"></div>
+    <div class="absolute top-1/4 -left-32 w-96 h-96 bg-secondary/15 rounded-full blur-[140px] mix-blend-screen animate-pulse-slow"></div>
+    <div class="absolute bottom-1/3 -right-32 w-[32rem] h-[32rem] bg-secondary-container/15 rounded-full blur-[160px] mix-blend-screen"></div>
   </div>
 
   <!-- Global Header Navigation -->
@@ -48,11 +50,6 @@
 
       <!-- Action Button & Mobile Toggle -->
       <div class="flex items-center gap-4">
-        <a href="/contact" class="hidden sm:inline-flex items-center gap-2 bg-secondary text-on-secondary px-6 py-2.5 rounded font-semibold text-sm transition-all active:scale-95 hover:bg-secondary-container btn-glow shadow-[0_0_20px_rgba(34,211,238,0.25)]">
-          <span>Book Consultation</span>
-          <span class="material-symbols-outlined text-sm">arrow_forward</span>
-        </a>
-
         <!-- Mobile Menu Toggle Button -->
         <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 text-on-surface-variant hover:text-secondary focus:outline-none">
           <span class="material-symbols-outlined text-2xl">menu</span>
@@ -66,9 +63,6 @@
       <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/ai-services">AI Services</a>
       <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/project-management">Project Management</a>
       <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/contact">Contact</a>
-      <a href="/contact" class="block w-full text-center bg-secondary text-on-secondary py-3 rounded font-semibold text-sm mt-4">
-        Book Consultation
-      </a>
     </div>
   </nav>
 
@@ -94,7 +88,7 @@
         </h1>
 
         <p class="font-sans text-lg text-on-surface-variant leading-relaxed max-w-2xl">
-          Eliminating the disconnect between AI theory and real-world execution. We deploy bespoke AI workflow infrastructure paired with comprehensive corporate project management training tailored specifically for Singapore's growing SMEs.
+          Stop losing 15+ hours every week to repetitive data entry, manual invoicing, and slow lead replies. We deploy practical AI automations wired directly into your daily tools—helping Singapore SMEs scale output without expanding payroll.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 pt-4">
@@ -105,17 +99,17 @@
         </div>
 
         <!-- Trust Badges -->
-        <div class="pt-6 flex flex-wrap items-center gap-6 text-xs font-mono text-on-surface-variant/80 border-t border-outline-variant/20">
+        <div class="pt-6 flex flex-wrap items-center gap-6 text-sm font-mono text-on-surface-variant/80 border-t border-outline-variant/20">
           <div class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-secondary text-base">verified</span>
+            <span class="material-symbols-outlined text-secondary text-lg">verified</span>
             <span>ADVANCE PROFESSIONAL CERTIFIED IN DATA SCIENCE AND AI</span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-secondary text-base">verified</span>
+            <span class="material-symbols-outlined text-secondary text-lg">verified</span>
             <span>PMP® CERTIFIED ADVISORS</span>
           </div>
           <div class="flex items-center gap-2">
-            <span class="material-symbols-outlined text-secondary text-base">domain</span>
+            <span class="material-symbols-outlined text-secondary text-lg">domain</span>
             <span>SINGAPORE HEADQUARTERED</span>
           </div>
         </div>
@@ -144,7 +138,7 @@
                 <span class="material-symbols-outlined text-secondary text-3xl sm:text-4xl shrink-0">neurology</span>
                 <div>
                   <div class="text-on-surface font-bold text-sm sm:text-base">Autonomous Agent Workflow</div>
-                  <div class="text-xs text-on-surface-variant mt-0.5">n8n / Make.com / Multi-agent framework</div>
+                  <div class="text-xs text-on-surface-variant mt-0.5">n8n / Make.com / Multi-Agent Orchestration</div>
                 </div>
               </div>
               <span class="text-secondary font-bold text-xs sm:text-sm tracking-wider ml-2 shrink-0">ACTIVE</span>
@@ -155,7 +149,7 @@
                 <span class="material-symbols-outlined text-secondary text-3xl sm:text-4xl shrink-0">insights</span>
                 <div>
                   <div class="text-on-surface font-bold text-sm sm:text-base">Predictive AI model and Analytics</div>
-                  <div class="text-xs text-on-surface-variant mt-0.5">Forecasting / Classification / Time-Series</div>
+                  <div class="text-xs text-on-surface-variant mt-0.5">Forecasting / AutoML / Anomaly Detection / Vision Modeling</div>
                 </div>
               </div>
               <span class="text-secondary font-bold text-xs sm:text-sm tracking-wider ml-2 shrink-0">DATA-DRIVEN</span>
@@ -165,8 +159,8 @@
               <div class="flex items-center gap-4">
                 <span class="material-symbols-outlined text-secondary text-3xl sm:text-4xl shrink-0">lock</span>
                 <div>
-                  <div class="text-on-surface font-bold text-sm sm:text-base">Private Enterprise GenAI</div>
-                  <div class="text-xs text-on-surface-variant mt-0.5">Zero Data Leakage / On-Premise</div>
+                  <div class="text-on-surface font-bold text-sm sm:text-base">Private AI &amp; Knowledge Base</div>
+                  <div class="text-xs text-on-surface-variant mt-0.5">Zero Data Leakage / On-Premise Hosting</div>
                 </div>
               </div>
               <span class="text-secondary font-bold text-xs sm:text-sm tracking-wider ml-2 shrink-0">100% SECURE</span>
@@ -211,29 +205,24 @@
           </div>
           <h3 class="font-display text-2xl font-bold text-on-surface mb-3">AI Transformation &amp; Workflow Automation</h3>
           <p class="font-sans text-on-surface-variant mb-6 leading-relaxed">
-            Implementing autonomous agentic workflows to automate redundant bottlenecks, streamline cross-department operations, and sync your CRM automatically.
+            Eliminate manual data transfer between WhatsApp, email, CRM, and accounting. We engineer automated pipelines that capture leads, process invoices, and update databases instantly.
           </p>
           
-          <ul class="space-y-3 font-mono text-xs text-on-surface mb-6">
+          <ul class="space-y-3 font-mono text-xs text-on-surface">
             <li class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-              Utilizing n8n and Make.com
+              Instant Lead-to-CRM &amp; WhatsApp Response
             </li>
             <li class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-              Multi-Agent System Orchestration
+              Automated PDF Invoice &amp; PO Extraction to Xero
             </li>
             <li class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-              Custom Workflows to Resolve Operational Bottlenecks
+              Multi-Department Approvals &amp; Slack Alerts
             </li>
           </ul>
         </div>
-
-        <a href="/ai-services" class="inline-flex items-center gap-2 font-mono text-xs text-secondary hover:underline relative z-10">
-          <span>LEARN MORE ABOUT WORKFLOW AUTOMATION</span>
-          <span class="material-symbols-outlined text-xs">arrow_forward</span>
-        </a>
       </div>
 
       <!-- Card 2: Enterprise Knowledge Base & Private LLM -->
@@ -242,29 +231,25 @@
           <div class="w-12 h-12 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary mb-6">
             <span class="material-symbols-outlined text-2xl">security</span>
           </div>
-          <h3 class="font-display text-2xl font-bold text-on-surface mb-3">Private Enterprise GenAI</h3>
+          <h3 class="font-display text-2xl font-bold text-on-surface mb-3">Private AI &amp; Knowledge Base</h3>
           <p class="font-sans text-on-surface-variant leading-relaxed mb-6">
-            Deploy secure company AI chatbots and document search engines with strictly isolated data. Guard your confidential IP with strict zero-data-leakage protocols.
+            Give your team an internal AI search assistant that finds contract terms, SOPs, and product specs in seconds—with 100% private data isolation that never trains public models.
           </p>
-          <ul class="space-y-3 font-mono text-xs text-on-surface mb-6">
+          <ul class="space-y-3 font-mono text-xs text-on-surface">
             <li class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-              Private Document &amp; Knowledge Search
+              Instant Internal Search Across 1,000+ Company Docs
             </li>
             <li class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-              Zero Public Data Training &amp; Leakage
+              Zero Data Leakage &amp; Full PDPA Compliance
             </li>
             <li class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
-              On-Premise &amp; Secure VPC Deployment
+              Role-Based Access Control for Confidential Files
             </li>
           </ul>
         </div>
-        <a href="/ai-services" class="inline-flex items-center gap-2 font-mono text-xs text-secondary hover:underline relative z-10">
-          <span>EXPLORE PRIVATE GENAI</span>
-          <span class="material-symbols-outlined text-xs">arrow_forward</span>
-        </a>
       </div>
 
       <!-- Card 3: Corporate Project Management & AI Training -->
@@ -277,7 +262,7 @@
           <p class="font-sans text-on-surface-variant leading-relaxed mb-6">
             Elevating your entire organization through hands-on AI tool adoption for all staff, specialized AI project management training, and structured certification pathways.
           </p>
-          <ul class="space-y-3 font-mono text-xs text-on-surface mb-6">
+          <ul class="space-y-3 font-mono text-xs text-on-surface">
             <li class="flex items-center gap-2">
               <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
               Hands-on AI Tool Adoption for Staff
@@ -292,10 +277,6 @@
             </li>
           </ul>
         </div>
-        <a href="/project-management" class="inline-flex items-center gap-2 font-mono text-xs text-secondary hover:underline relative z-10">
-          <span>VIEW TRAINING SYLLABUS</span>
-          <span class="material-symbols-outlined text-xs">arrow_forward</span>
-        </a>
       </div>
 
       <!-- Card 4: Managed Services & Support -->
@@ -306,23 +287,19 @@
           </div>
           <h3 class="font-display text-2xl font-bold text-on-surface mb-3">Managed AI Support &amp; Operational Care</h3>
           <p class="font-sans text-on-surface-variant mb-6 leading-relaxed">
-            Post-deployment support and operational maintenance to ensure your AI workflows, prompts, and automations run reliably without business disruption.
+            Gain all the power of an enterprise AI engineering team without the overhead of high-cost hiring. We keep your prompts sharp, monitor workflows, and fix API breaks before they hurt operations.
           </p>
-          <ul class="space-y-3 font-mono text-xs text-on-surface mb-6">
+          <ul class="space-y-3 font-mono text-xs text-on-surface">
             <li class="flex items-start gap-2">
               <span class="material-symbols-outlined text-secondary text-sm mt-0.5 shrink-0">check_circle</span>
-              <span><strong class="text-on-surface font-semibold">Post-Launch Limited Time Support:</strong> Included prompt refinement, API adjustment, and rapid bug resolution following deployment.</span>
+              <span><strong class="text-on-surface font-semibold">Post-Launch Stabilization:</strong> Included prompt tuning and rapid adjustment to ensure seamless adoption.</span>
             </li>
             <li class="flex items-start gap-2">
               <span class="material-symbols-outlined text-secondary text-sm mt-0.5 shrink-0">check_circle</span>
-              <span><strong class="text-on-surface font-semibold">Tiered Monthly Maintenance:</strong> Scheduled workflow health checks, model updates, and priority troubleshooting to prevent downtime.</span>
+              <span><strong class="text-on-surface font-semibold">Fractional AI Ops Retainer:</strong> Scheduled health checks, model upgrades, and priority troubleshooting with guaranteed response times.</span>
             </li>
           </ul>
         </div>
-        <a href="/contact" class="inline-flex items-center gap-2 font-mono text-xs text-secondary hover:underline relative z-10">
-          <span>DISCUSS OPERATIONAL CARE</span>
-          <span class="material-symbols-outlined text-xs">arrow_forward</span>
-        </a>
       </div>
 
     </div>
@@ -331,8 +308,8 @@
   <!-- DYNAMIC SECTION 1: Interactive Multi-Industry Workflow Simulator -->
   <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
     <div class="text-center max-w-3xl mx-auto mb-12">
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs uppercase tracking-widest mb-4">
-        <span class="material-symbols-outlined text-sm">hub</span>
+      <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-base uppercase tracking-wider mb-4">
+        <span class="material-symbols-outlined text-lg">hub</span>
         PRODUCTION ARCHITECTURES IN ACTION
       </div>
       <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface tracking-tight leading-tight">
@@ -342,7 +319,7 @@
         </span>
       </h2>
       <p class="font-sans text-base text-on-surface-variant mt-4">
-        Select a real-world enterprise use case below to inspect how ProjectAI orchestrates live data, security guardrails, and automated actions.
+        Select an interactive business workflow below to see how ProjectAI orchestrates live data, security guardrails, and automated actions across your operations.
       </p>
     </div>
 
@@ -350,11 +327,11 @@
     <div class="glass-panel spotlight-card p-6 md:p-10 rounded-2xl">
       <!-- Tab Controls -->
       <div class="flex flex-wrap gap-2 p-1.5 bg-surface-container-lowest/90 rounded-xl border border-outline-variant/30 max-w-2xl mx-auto mb-8 font-mono text-xs">
-        <button id="tab-btn-finance" onclick="setSimTab('finance')" class="flex-1 py-3 px-4 rounded-lg font-bold transition-all text-center bg-secondary text-on-secondary shadow-[0_0_15px_rgba(34,211,238,0.35)]">
-          1. INVOICE TRIAGE
+        <button id="tab-btn-crm" onclick="setSimTab('crm')" class="flex-1 py-3 px-4 rounded-lg font-bold transition-all text-center bg-secondary text-on-secondary shadow-[0_0_15px_rgba(34,211,238,0.35)]">
+          1. WHATSAPP &amp; CRM FUNNEL
         </button>
-        <button id="tab-btn-crm" onclick="setSimTab('crm')" class="flex-1 py-3 px-4 rounded-lg font-bold transition-all text-center text-on-surface-variant hover:text-secondary">
-          2. WHATSAPP &amp; CRM FUNNEL
+        <button id="tab-btn-finance" onclick="setSimTab('finance')" class="flex-1 py-3 px-4 rounded-lg font-bold transition-all text-center text-on-surface-variant hover:text-secondary">
+          2. OPERATIONAL QUALITY SCAN
         </button>
         <button id="tab-btn-rag" onclick="setSimTab('rag')" class="flex-1 py-3 px-4 rounded-lg font-bold transition-all text-center text-on-surface-variant hover:text-secondary">
           3. PRIVATE KNOWLEDGE BASE
@@ -427,14 +404,7 @@
             </div>
 
             <div class="pt-2">
-              <a id="roiWhatsAppBtn" href="https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20used%20your%20ROI%20Calculator%20for%2025%20hours/week%20of%20manual%20work.%20I%20would%20like%20to%20discuss%20an%20automation%20blueprint." 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 class="w-full bg-[#25D366] hover:bg-[#20bd5a] text-black font-bold py-4 px-6 rounded-lg text-sm transition-all flex items-center justify-center gap-2 shadow-[0_0_20px_rgba(37,211,102,0.3)]">
-                <span class="material-symbols-outlined text-lg">chat</span>
-                <span>Discuss This ROI on WhatsApp</span>
-              </a>
-              <p class="text-[11px] text-on-surface-variant/70 text-center font-mono leading-relaxed mt-2.5">
+              <p class="text-[11px] text-on-surface-variant/70 text-center font-mono leading-relaxed">
                 * Estimates are for illustrative and planning purposes only. Actual savings vary based on workflow complexity, team size, and existing operational processes.
               </p>
             </div>
@@ -522,6 +492,52 @@
     </div>
   </section>
 
+  <!-- Production-Grade Tech Stacks & Frameworks -->
+  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center border-t border-outline-variant/20">
+    <div class="space-y-1.5 mb-8 max-w-2xl mx-auto">
+      <span class="font-mono text-sm text-secondary uppercase tracking-wider block font-semibold">
+        PRODUCTION-GRADE TECH STACKS &amp; FRAMEWORKS
+      </span>
+      <div class="text-sm font-mono text-on-surface-variant font-medium tracking-wide">
+        Enterprise-Grade Power, Engineered for Agile Business Growth.
+      </div>
+    </div>
+    
+    <div class="max-w-4xl mx-auto space-y-3 font-mono text-xs sm:text-sm">
+      <!-- Row 1 (Automation & Frameworks) -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+          <span>n8n (Self-Hosted / Cloud)</span>
+        </div>
+        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+          <span>Make.com</span>
+        </div>
+        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+          <span>LangChain / Multi-Agent Frameworks</span>
+        </div>
+      </div>
+
+      <!-- Row 2 (Models, Vectors & Infrastructure) -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+          <span>Claude 3.5, GPT-4o &amp; Llama 3</span>
+        </div>
+        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+          <span>pgvector / Qdrant (Secure Embeddings)</span>
+        </div>
+        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
+          <span>Docker / Containerized Infrastructure</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Global Footer -->
   <footer class="bg-surface-container-lowest border-t border-outline-variant/20 pt-16 pb-12">
     <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
@@ -540,13 +556,6 @@
           <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
             Helping Singapore SMEs eliminate operational bottlenecks and scale productivity through practical AI implementation and project excellence.
           </p>
-          <div class="font-mono text-xs text-on-surface-variant">
-            <div class="text-on-surface font-semibold">Office Address:</div>
-            ProjectAI<br>
-            60 Paya Lebar Road, #06-53,<br>
-            Paya Lebar Square,<br>
-            Singapore 409051
-          </div>
         </div>
 
         <!-- Column 2: Solutions -->
@@ -554,7 +563,7 @@
           <h4 class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">Solutions</h4>
           <ul class="space-y-2 text-xs font-sans text-on-surface-variant">
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Workflow Automation (n8n/Make)</a></li>
-            <li><a href="/ai-services" class="hover:text-secondary transition-colors">Secure Enterprise GenAI</a></li>
+            <li><a href="/ai-services" class="hover:text-secondary transition-colors">Private AI &amp; Knowledge Base</a></li>
             <li><a href="/project-management" class="hover:text-secondary transition-colors">Corporate Project Management &amp; PMP® Training</a></li>
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Managed AI Operations</a></li>
           </ul>
@@ -575,7 +584,6 @@
         <div class="space-y-4">
           <h4 class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">Direct Contact</h4>
           <div class="space-y-2 text-xs font-mono text-on-surface-variant">
-            <div>Phone: +65 8907 6453</div>
             <div>Email: advisory@projectai.sg</div>
           </div>
           <a href="https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20services." 
@@ -652,37 +660,37 @@
     // 4. Interactive Multi-Industry Workflow Simulator Data
     const simData = {
       finance: {
-        title: "Autonomous Invoice Triage & Xero Reconciliation",
-        subtitle: "Eliminates 15+ hours of manual weekly accounting verification",
-        trigger: "Incoming PDF Invoice via Email Webhook",
+        title: "Real-Time Quality Inspection & Anomaly Detection",
+        subtitle: "Instantly spots product defects, packaging damage, and operational errors before delivery",
+        trigger: "Real-Time Camera Feed / Shipment Ingestion Trigger",
         steps: [
-          { name: "Multi-Modal Document Parsing", tech: "OCR + Llama 3.2 Vision", time: "1.2s", status: "Parsed" },
-          { name: "Vendor & GST Calculation Verification", tech: "Zero-Hallucination Validation Loop", time: "0.8s", status: "Verified" },
-          { name: "ERP Ledger Synchronization", tech: "Direct Xero API Integration", time: "0.4s", status: "Reconciled" }
+          { name: "Instant Visual Inspection AI", tech: "Computer Vision + Automated Defect Recognition", status: "Inspected (22ms)" },
+          { name: "Automated Quality & Tolerance Verification", tech: "Accuracy Threshold & Defect Classification Check", status: "Validated (35ms)" },
+          { name: "Automated Workflow Routing & ERP Alert", tech: "Instant Defect Flagging + Real-Time Operations Notification", status: "Triggered (14ms)" }
         ],
-        stats: { latency: "2.4s", accuracy: "99.8%", staffTimeSaved: "92%" }
+        summary: "Zero Damaged Shipments • 99.9% Inspection Accuracy • Instant Operations Alert"
       },
       crm: {
         title: "24/7 WhatsApp Lead Qualification & Calendar Booking",
-        subtitle: "Captures and qualifies inbound inquiries in < 30 seconds",
-        trigger: "New WhatsApp Business Chat Initiated",
+        subtitle: "Captures, qualifies, and schedules inbound inquiries in < 30 seconds",
+        trigger: "New WhatsApp Business Chat Initiated (Webhook via Make.com / n8n)",
         steps: [
-          { name: "Intent Analysis & Budget Scoping", tech: "GPT-4o Guardrailed Agent", time: "0.9s", status: "Qualified" },
-          { name: "Lead Score Assignment & CRM Update", tech: "HubSpot & Salesforce Connector", time: "0.6s", status: "Synced" },
-          { name: "Direct Meeting Link Dispatch", tech: "Calendly / Google Cal Sync", time: "0.3s", status: "Dispatched" }
+          { name: "Intent Analysis & Budget Scoping", tech: "PDPA-Safe Guardrailed Agent (GPT-4o / Local LLM)", status: "Qualified (0.9s)" },
+          { name: "Lead Score Assignment & CRM Update", tech: "HubSpot / Zoho CRM / Google Sheets Connector (via Make.com / n8n)", status: "Synced (0.6s)" },
+          { name: "Direct Meeting Link Dispatch", tech: "Calendly / Google Calendar Sync", status: "Dispatched (0.3s)" }
         ],
-        stats: { latency: "1.8s", accuracy: "99.4%", staffTimeSaved: "85%" }
+        summary: "Total Execution Time: ~1.8s • Instant WhatsApp Reply Sent • 100% PDPA Compliant"
       },
       rag: {
-        title: "Zero-Leakage Enterprise Knowledge Base Search",
-        subtitle: "Instant hallucination-free search across 5,000+ internal SOPs",
-        trigger: "Employee Query: 'Extract Q3 Penalty SLA for Vendor A'",
+        title: "Private & Secure Internal Company AI Search",
+        subtitle: "Instant, accurate operational search across 5,000+ internal SOPs, contracts, and company files",
+        trigger: "Employee Query: 'Find refund policy for damaged goods in Customer SOP'",
         steps: [
-          { name: "Isolated Vector Embedding Search", tech: "pgvector / Private VPC", time: "65ms", status: "Retrieved" },
-          { name: "Role-Based Access Control (RBAC)", tech: "Active Directory / SSO", time: "12ms", status: "Authorized" },
-          { name: "Strict Factual Answer Synthesis", tech: "Claude 3.5 Sonnet (No Training)", time: "380ms", status: "Delivered" }
+          { name: "Encrypted Internal Document Search", tech: "Private Vector Retrieval / Isolated Secure Storage", status: "Retrieved (65ms)" },
+          { name: "Staff Permission & Role-Based Access Controls", tech: "Internal Staff Verification & Department-Level Access Rules", status: "Authorized (12ms)" },
+          { name: "Direct Answer Synthesis with Source Verification", tech: "100% Confidential (Zero Public AI Training / No Data Leakage)", status: "Delivered (380ms)" }
         ],
-        stats: { latency: "457ms", accuracy: "100%", staffTimeSaved: "88%" }
+        summary: "Zero Public Model Training • 100% Data Confidentiality • Instant Source Citations"
       }
     };
 
@@ -694,25 +702,21 @@
       let stepsHtml = data.steps.map((step, idx) => `
         <div class="p-3.5 rounded-lg bg-surface-container-high/70 border border-outline-variant/30 flex items-center justify-between">
           <div class="flex items-center gap-3">
-            <span class="w-6 h-6 rounded-full bg-secondary/20 border border-secondary/40 text-secondary flex items-center justify-center font-bold text-xs">${idx + 1}</span>
+            <span class="w-6 h-6 rounded-full bg-secondary/20 border border-secondary/40 text-secondary flex items-center justify-center font-bold text-xs shrink-0">${idx + 1}</span>
             <div>
               <div class="text-on-surface font-semibold text-xs">${step.name}</div>
-              <div class="text-[11px] text-on-surface-variant font-mono">${step.tech}</div>
+              <div class="text-[11px] text-on-surface-variant font-mono mt-0.5">${step.tech}</div>
             </div>
           </div>
-          <div class="text-right font-mono text-xs">
-            <span class="text-secondary font-bold">${step.status}</span>
-            <div class="text-[10px] text-on-surface-variant">${step.time}</div>
+          <div class="text-right font-mono text-xs shrink-0 ml-3">
+            <span class="inline-flex items-center px-2 py-0.5 rounded bg-secondary/10 border border-secondary/30 text-secondary font-bold text-[11px]">${step.status}</span>
+            ${step.time ? `<div class="text-[10px] text-on-surface-variant mt-0.5">${step.time}</div>` : ''}
           </div>
         </div>
       `).join('');
 
       container.innerHTML = `
-        <div class="lg:col-span-7 space-y-4">
-          <div class="flex items-center gap-2 font-mono text-xs text-secondary font-bold">
-            <span class="w-2 h-2 rounded-full bg-secondary animate-ping"></span>
-            ACTIVE SIMULATION PIPELINE
-          </div>
+        <div class="col-span-12 max-w-3xl mx-auto w-full space-y-4">
           <h3 class="font-display text-2xl font-bold text-on-surface">${data.title}</h3>
           <p class="font-sans text-sm text-on-surface-variant">${data.subtitle}</p>
 
@@ -722,36 +726,12 @@
 
           <div class="space-y-2.5 pt-2">
             ${stepsHtml}
-          </div>
-        </div>
-
-        <div class="lg:col-span-5">
-          <div class="p-6 rounded-xl bg-surface-container-lowest/90 border border-secondary/30 font-mono space-y-4">
-            <div class="flex justify-between items-center border-b border-outline-variant/30 pb-3">
-              <span class="text-xs text-on-surface font-bold">PIPELINE TELEMETRY</span>
-              <span class="text-xs text-green-400 font-bold">● ONLINE</span>
-            </div>
-            
-            <div class="space-y-3 text-xs">
-              <div class="flex justify-between">
-                <span class="text-on-surface-variant">End-to-End Latency:</span>
-                <span class="text-secondary font-bold">${data.stats.latency}</span>
+            ${data.summary ? `
+              <div class="mt-3 p-2.5 rounded-lg bg-surface-container-lowest/90 border border-secondary/25 flex items-center justify-center gap-2 font-mono text-[11px] text-on-surface-variant text-center">
+                <span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse shrink-0"></span>
+                <span>${data.summary}</span>
               </div>
-              <div class="flex justify-between">
-                <span class="text-on-surface-variant">Accuracy Rate:</span>
-                <span class="text-secondary font-bold">${data.stats.accuracy}</span>
-              </div>
-              <div class="flex justify-between">
-                <span class="text-on-surface-variant">Time Saved:</span>
-                <span class="text-green-400 font-bold">${data.stats.staffTimeSaved}</span>
-              </div>
-            </div>
-
-            <div class="pt-3 border-t border-outline-variant/30">
-              <a href="/ai-services" class="block w-full text-center py-2.5 rounded bg-secondary text-on-secondary font-bold text-xs btn-glow">
-                Deploy This Architecture →
-              </a>
-            </div>
+            ` : ''}
           </div>
         </div>
       `;
@@ -771,8 +751,8 @@
       renderSimContent(key);
     }
 
-    // Initialize Simulator with Finance
-    renderSimContent('finance');
+    // Initialize Simulator with CRM Funnel
+    renderSimContent('crm');
 
     // 5. ROI & Time Savings Calculator Logic
     function updateRoiCalculation(hours) {

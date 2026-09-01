@@ -13,16 +13,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
   
   <!-- App Styles -->
-  <link rel="stylesheet" crossorigin href="/assets/style-CK7cyyeo.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-C_D6M_pT.css">
 </head>
 <body class="bg-surface-container-lowest text-on-surface font-sans selection:bg-secondary/30 selection:text-secondary relative min-h-screen">
 
   <!-- Ambient High-Tech Background -->
   <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
     <div class="absolute inset-0 bg-[#0B0F10]"></div>
-    <div class="absolute inset-[-100%] bg-data-grid opacity-30"></div>
-    <div class="absolute top-1/4 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[140px] mix-blend-screen animate-pulse-slow"></div>
-    <div class="absolute bottom-1/3 -left-32 w-[32rem] h-[32rem] bg-secondary-container/10 rounded-full blur-[160px] mix-blend-screen"></div>
+    <!-- Translucent AI Neural Mesh Image Layer (Groundup.ai style) -->
+    <div class="absolute inset-0 bg-neural-mesh"></div>
+    <div class="absolute inset-[-100%] bg-data-grid opacity-25"></div>
+    <div class="absolute top-1/4 -right-32 w-96 h-96 bg-secondary/15 rounded-full blur-[140px] mix-blend-screen animate-pulse-slow"></div>
+    <div class="absolute bottom-1/3 -left-32 w-[32rem] h-[32rem] bg-secondary-container/15 rounded-full blur-[160px] mix-blend-screen"></div>
   </div>
 
   <!-- Global Header Navigation -->
@@ -48,11 +50,7 @@
 
       <!-- Action Button & Mobile Toggle -->
       <div class="flex items-center gap-4">
-        <a href="/contact" class="hidden sm:inline-flex items-center gap-2 bg-secondary text-on-secondary px-6 py-2.5 rounded font-semibold text-sm transition-all active:scale-95 hover:bg-secondary-container btn-glow shadow-[0_0_20px_rgba(34,211,238,0.25)]">
-          <span>Book Consultation</span>
-          <span class="material-symbols-outlined text-sm">arrow_forward</span>
-        </a>
-
+        <!-- Mobile Menu Toggle Button -->
         <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu" class="md:hidden p-2 text-on-surface-variant hover:text-secondary focus:outline-none">
           <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
@@ -65,9 +63,6 @@
       <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/ai-services">AI Services</a>
       <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/project-management">Project Management</a>
       <a class="block text-secondary font-semibold text-base py-2 border-l-2 border-secondary pl-3" href="/contact">Contact</a>
-      <a href="/contact" class="block w-full text-center bg-secondary text-on-secondary py-3 rounded font-semibold text-sm mt-4">
-        Book Consultation
-      </a>
     </div>
   </nav>
 
@@ -108,10 +103,6 @@
 
           <div class="space-y-3.5 pt-2 text-xs font-mono text-on-surface-variant">
             <div class="flex items-center gap-3">
-              <span class="material-symbols-outlined text-secondary text-base">call</span>
-              <span class="text-on-surface font-semibold">+65 89076453</span>
-            </div>
-            <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-secondary text-base">mail</span>
               <span class="text-on-surface font-semibold">advisory@projectai.sg</span>
             </div>
@@ -146,7 +137,7 @@
                 <span class="font-display font-bold text-sm text-on-surface">Chat on WhatsApp Business</span>
                 <span class="px-2 py-0.5 rounded text-[11px] font-mono font-bold bg-[#25D366]/20 text-[#25D366]">ONLINE</span>
               </div>
-              <p class="font-sans text-xs text-on-surface-variant mt-0.5">Direct chat with Lead AI Strategists (Replies in &lt;15 mins)</p>
+              <p class="font-sans text-xs text-on-surface-variant mt-0.5">Direct chat with Lead AI Strategists</p>
             </div>
           </div>
           <span class="material-symbols-outlined text-on-surface-variant group-hover:text-[#25D366] group-hover:translate-x-1 transition-all">arrow_forward</span>
@@ -189,8 +180,8 @@
                 <input required type="email" placeholder="john.doe@company.sg" class="w-full bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface px-4 py-3 rounded text-sm transition-all">
               </div>
               <div class="space-y-1.5">
-                <label class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">Company / Phone</label>
-                <input type="text" placeholder="Enterprise Pte Ltd / +65 9123 4567" class="w-full bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface px-4 py-3 rounded text-sm transition-all">
+                <label class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">Company Name</label>
+                <input type="text" placeholder="Enterprise Pte Ltd" class="w-full bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface px-4 py-3 rounded text-sm transition-all">
               </div>
             </div>
 
@@ -217,7 +208,7 @@
                 </label>
                 <label class="flex items-center gap-3 p-3 rounded bg-surface-container-lowest/60 border border-outline-variant/30 cursor-pointer hover:border-secondary/50 text-xs font-sans">
                   <input type="radio" name="service" class="text-secondary focus:ring-secondary">
-                  <span>Secure Company GenAI</span>
+                  <span>Private AI &amp; Knowledge Base</span>
                 </label>
                 <label class="flex items-center gap-3 p-3 rounded bg-surface-container-lowest/60 border border-outline-variant/30 cursor-pointer hover:border-secondary/50 text-xs font-sans">
                   <input type="radio" name="service" class="text-secondary focus:ring-secondary">
@@ -225,7 +216,7 @@
                 </label>
                 <label class="flex items-center gap-3 p-3 rounded bg-surface-container-lowest/60 border border-outline-variant/30 cursor-pointer hover:border-secondary/50 text-xs font-sans">
                   <input type="radio" name="service" class="text-secondary focus:ring-secondary">
-                  <span>"Build + Train" Full Scope</span>
+                  <span>Predictive AI Model and Analytics</span>
                 </label>
               </div>
             </div>
@@ -287,7 +278,7 @@
           <h4 class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">Solutions</h4>
           <ul class="space-y-2 text-xs font-sans text-on-surface-variant">
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Workflow Automation (n8n/Make)</a></li>
-            <li><a href="/ai-services" class="hover:text-secondary transition-colors">Secure Enterprise GenAI</a></li>
+            <li><a href="/ai-services" class="hover:text-secondary transition-colors">Private AI &amp; Knowledge Base</a></li>
             <li><a href="/project-management" class="hover:text-secondary transition-colors">Corporate Project Management &amp; PMP® Training</a></li>
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Managed AI Operations</a></li>
           </ul>
@@ -308,7 +299,6 @@
         <div class="space-y-4">
           <h4 class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">Direct Contact</h4>
           <div class="space-y-2 text-xs font-mono text-on-surface-variant">
-            <div>Phone: +65 8907 6453</div>
             <div>Email: advisory@projectai.sg</div>
           </div>
           <a href="https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20services." 

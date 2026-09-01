@@ -27,12 +27,14 @@
   <!-- Ambient High-Tech Background -->
   <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
     <div class="absolute inset-0 bg-[#0B0F10]"></div>
-    <div class="absolute inset-[-100%] bg-data-grid opacity-30"></div>
+    <!-- Translucent AI Neural Mesh Image Layer (Groundup.ai style) -->
+    <div class="absolute inset-0 bg-neural-mesh"></div>
+    <div class="absolute inset-[-100%] bg-data-grid opacity-25"></div>
     <div
-      class="absolute top-1/4 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[140px] mix-blend-screen animate-pulse-slow">
+      class="absolute top-1/4 -right-32 w-96 h-96 bg-secondary/15 rounded-full blur-[140px] mix-blend-screen animate-pulse-slow">
     </div>
     <div
-      class="absolute bottom-1/3 -left-32 w-[32rem] h-[32rem] bg-secondary-container/10 rounded-full blur-[160px] mix-blend-screen">
+      class="absolute bottom-1/3 -left-32 w-[32rem] h-[32rem] bg-secondary-container/15 rounded-full blur-[160px] mix-blend-screen">
     </div>
   </div>
 
@@ -64,12 +66,6 @@
 
       <!-- Action Button & Mobile Toggle -->
       <div class="flex items-center gap-4">
-        <a href="/contact"
-          class="hidden sm:inline-flex items-center gap-2 bg-secondary text-on-secondary px-6 py-2.5 rounded font-semibold text-sm transition-all active:scale-95 hover:bg-secondary-container btn-glow shadow-[0_0_20px_rgba(34,211,238,0.25)]">
-          <span>Book Consultation</span>
-          <span class="material-symbols-outlined text-sm">arrow_forward</span>
-        </a>
-
         <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu"
           class="md:hidden p-2 text-on-surface-variant hover:text-secondary focus:outline-none">
           <span class="material-symbols-outlined text-2xl">menu</span>
@@ -86,10 +82,6 @@
       <a class="block text-secondary font-semibold text-base py-2 border-l-2 border-secondary pl-3"
         href="/project-management">Project Management</a>
       <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/contact">Contact</a>
-      <a href="/contact"
-        class="block w-full text-center bg-secondary text-on-secondary py-3 rounded font-semibold text-sm mt-4">
-        Book Consultation
-      </a>
     </div>
   </nav>
 
@@ -97,8 +89,8 @@
   <main class="pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
     <header class="mb-20 max-w-3xl">
       <div
-        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs uppercase tracking-widest mb-6">
-        <span class="material-symbols-outlined text-sm">verified</span>
+        class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-base uppercase tracking-wider mb-6">
+        <span class="material-symbols-outlined text-lg">verified</span>
         PMP® CERTIFIED STRATEGISTS &amp; TRAINERS
       </div>
       <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
@@ -109,56 +101,81 @@
       </h1>
       <p class="font-sans text-lg text-on-surface-variant leading-relaxed">
         We don't just build systems; we equip your teams to operate them. We provide tailored AI project management
-        training, PMP® exam preparation, and practical AI adoption bootcamps for Singapore business leaders and
-        managers.
+        training, PMP® exam preparation, and practical AI adoption workshops for Singapore enterprises and growing teams.
       </p>
     </header>
 
     <!-- The Build + Train 4-Stage Methodology -->
     <section class="mb-24">
-      <div class="mb-12">
-        <span class="font-mono text-xs text-secondary uppercase tracking-widest block mb-2">DELIVERY LIFECYCLE</span>
-        <h2 class="font-display text-3xl font-bold text-on-surface">The "Build + Train" 4-Stage Framework</h2>
+      <div class="mb-12 space-y-1.5">
+        <span class="font-mono text-sm text-secondary uppercase tracking-wider block font-semibold">DELIVERY LIFECYCLE</span>
+        <div class="text-sm font-mono text-on-surface-variant font-medium tracking-wide">
+          We Build the System. We Train Your People. You Keep the Edge.
+        </div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-on-surface pt-1">
+          The "Build + Train" 4-Stage Framework
+        </h2>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 relative">
 
         <!-- Stage 1 -->
-        <div class="glass-panel p-6 rounded-xl micro-glow relative">
-          <div class="font-mono text-3xl font-bold text-secondary/40 mb-3">01</div>
-          <h3 class="font-display text-lg font-bold text-on-surface mb-2">Discovery &amp; Scoping</h3>
-          <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
-            Analyze your manual workflows, cost leaks, and team capabilities to design a high-ROI automation roadmap.
-          </p>
+        <div class="glass-panel p-6 rounded-2xl relative bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex flex-col justify-between group hover:border-secondary/40 transition-all shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-mono text-3xl font-extrabold text-secondary/40 group-hover:text-secondary/70 transition-colors">01</span>
+              <span class="hidden md:inline-flex material-symbols-outlined text-outline-variant/60 group-hover:text-secondary transition-colors text-lg">arrow_forward</span>
+            </div>
+            <h3 class="font-display text-lg font-bold text-on-surface mb-2.5 tracking-tight">Discovery &amp; Scoping</h3>
+            <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
+              Audit manual bottlenecks, high-cost admin tasks, and tech infrastructure to engineer a high-ROI automation roadmap tailored to your operations.
+            </p>
+          </div>
         </div>
 
         <!-- Stage 2 -->
-        <div class="glass-panel p-6 rounded-xl micro-glow relative">
-          <div class="font-mono text-3xl font-bold text-secondary/40 mb-3">02</div>
-          <h3 class="font-display text-lg font-bold text-on-surface mb-2">Agile Pilot Build</h3>
-          <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
-            Rapidly construct a functional Proof-of-Concept (PoC) within 2–3 weeks to validate measurable efficiency
-            gains.
-          </p>
+        <div class="glass-panel p-6 rounded-2xl relative bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex flex-col justify-between group hover:border-secondary/40 transition-all shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-mono text-3xl font-extrabold text-secondary/40 group-hover:text-secondary/70 transition-colors">02</span>
+              <span class="hidden md:inline-flex material-symbols-outlined text-outline-variant/60 group-hover:text-secondary transition-colors text-lg">arrow_forward</span>
+            </div>
+            <h3 class="font-display text-lg font-bold text-on-surface mb-2.5 tracking-tight">Agile Pilot Build</h3>
+            <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
+              Deploy a secure, functional Proof-of-Concept (PoC) in 2–3 weeks to validate measurable time and cost savings before scaling.
+            </p>
+          </div>
         </div>
 
-        <!-- Stage 3 -->
-        <div class="glass-panel p-6 rounded-xl micro-glow relative border-secondary/40">
-          <div class="font-mono text-3xl font-bold text-secondary mb-3">03</div>
-          <h3 class="font-display text-lg font-bold text-on-surface mb-2">Team Upskilling</h3>
-          <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
-            Conduct hands-on workshops and leadership bootcamps so your internal staff confidently runs the stack.
-          </p>
+        <!-- Stage 3 (Differentiator Highlight) -->
+        <div class="glass-panel-elevated p-6 rounded-2xl relative bg-surface-container-lowest/90 border border-secondary/40 border-t-2 border-t-secondary backdrop-blur-md flex flex-col justify-between group shadow-[0_0_25px_rgba(34,211,238,0.15)]">
+          <div class="absolute -top-3 right-4 bg-secondary text-on-secondary font-mono text-[10px] font-bold px-2.5 py-0.5 rounded-full uppercase tracking-wider shadow-sm">
+            Core Differentiator
+          </div>
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-mono text-3xl font-extrabold text-secondary">03</span>
+              <span class="hidden md:inline-flex material-symbols-outlined text-secondary/60 group-hover:text-secondary transition-colors text-lg">arrow_forward</span>
+            </div>
+            <h3 class="font-display text-lg font-bold text-on-surface mb-2.5 tracking-tight">Team Upskilling &amp; Handover</h3>
+            <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
+              Deliver hands-on team workshops and PMO bootcamps so your internal staff confidently own, operate, and maintain the workflows.
+            </p>
+          </div>
         </div>
 
         <!-- Stage 4 -->
-        <div class="glass-panel p-6 rounded-xl micro-glow relative">
-          <div class="font-mono text-3xl font-bold text-secondary/40 mb-3">04</div>
-          <h3 class="font-display text-lg font-bold text-on-surface mb-2">Scale &amp; Governance</h3>
-          <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
-            Full enterprise rollout backed by continuous performance monitoring, KPI tracking, and dedicated Project Management
-            advisory.
-          </p>
+        <div class="glass-panel p-6 rounded-2xl relative bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex flex-col justify-between group hover:border-secondary/40 transition-all shadow-sm">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="font-mono text-3xl font-extrabold text-secondary/40 group-hover:text-secondary/70 transition-colors">04</span>
+              <span class="hidden md:inline-flex material-symbols-outlined text-green-400 text-lg">check_circle</span>
+            </div>
+            <h3 class="font-display text-lg font-bold text-on-surface mb-2.5 tracking-tight">Scale, Governance &amp; Care</h3>
+            <p class="font-sans text-xs text-on-surface-variant leading-relaxed">
+              Full operational rollout backed by PMI® governance, KPI tracking, and proactive maintenance retainers for long-term uptime.
+            </p>
+          </div>
         </div>
 
       </div>
@@ -180,22 +197,18 @@
               class="w-10 h-10 rounded bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary mb-6">
               <span class="material-symbols-outlined">psychology</span>
             </div>
-            <h3 class="font-display text-xl font-bold text-on-surface mb-3">Non-Project Management Leadership AI Accelerator</h3>
+            <h3 class="font-display text-xl font-bold text-on-surface mb-3">AI for Project Manager Masterclass</h3>
             <p class="font-sans text-xs text-on-surface-variant leading-relaxed mb-6">
-              Designed for C-suite, SME founders, and department managers who want to understand AI automation without
-              technical jargon.
+              Designed for project managers, scrum masters, and delivery leads looking to accelerate project lifecycles, automate status reporting, and forecast risks using modern AI tools.
             </p>
             <ul class="space-y-2.5 font-mono text-xs text-on-surface mb-6">
-              <li class="flex items-center gap-2"><span class="text-secondary">✓</span> Identifying high-ROI automation
-                targets</li>
-              <li class="flex items-center gap-2"><span class="text-secondary">✓</span> Evaluating AI tool safety &amp;
-                vendor risk</li>
-              <li class="flex items-center gap-2"><span class="text-secondary">✓</span> Managing digital transition
-                resistance</li>
+              <li class="flex items-center gap-2"><span class="text-secondary">✓</span> AI-powered scheduling, scoping &amp; resource estimation</li>
+              <li class="flex items-center gap-2"><span class="text-secondary">✓</span> Automated project status reporting &amp; stakeholder summaries</li>
+              <li class="flex items-center gap-2"><span class="text-secondary">✓</span> Predictive risk analysis &amp; proactive roadblock mitigation</li>
             </ul>
           </div>
           <div class="pt-4 border-t border-outline-variant/30 text-xs font-mono text-secondary">
-            Format: 1-Day Intensive Bootcamp
+            Format: 12 hours Intensive Masterclass
           </div>
         </div>
 
@@ -231,7 +244,7 @@
               class="w-10 h-10 rounded bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary mb-6">
               <span class="material-symbols-outlined">build</span>
             </div>
-            <h3 class="font-display text-xl font-bold text-on-surface mb-3">Hands-On Agentic Workflow Labs</h3>
+            <h3 class="font-display text-xl font-bold text-on-surface mb-3">Hands-On AI Automation Workflow Labs</h3>
             <p class="font-sans text-xs text-on-surface-variant leading-relaxed mb-6">
               Practical laboratory where your operational staff builds real n8n/Make automation workflows for daily
               business tasks.
@@ -282,14 +295,9 @@
     <!-- Bottom CTA -->
     <section class="mt-20 text-center space-y-6">
       <h2 class="font-display text-3xl font-bold text-on-surface">Ready to Level Up Your Project Capabilities?</h2>
-      <div class="flex flex-col sm:flex-row justify-center gap-4">
+      <div class="flex justify-center pt-2">
         <a href="/contact" class="bg-secondary text-on-secondary px-8 py-4 rounded font-bold text-sm btn-glow">
-          Discuss Training Needs
-        </a>
-        <a href="https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20Project%20Management%20and%20Training%20programs."
-          target="_blank" rel="noopener noreferrer"
-          class="border border-[#25D366]/40 text-[#25D366] px-8 py-4 rounded font-mono text-sm flex items-center justify-center gap-2 hover:bg-[#25D366]/10 transition-colors">
-          <span>Inquire via WhatsApp</span>
+          Let's Connect
         </a>
       </div>
     </section>
@@ -314,13 +322,6 @@
             Helping Singapore SMEs eliminate operational bottlenecks and scale productivity through practical AI
             implementation and project excellence.
           </p>
-          <div class="font-mono text-xs text-on-surface-variant">
-            <div class="text-on-surface font-semibold">Office Address:</div>
-            ProjectAI<br>
-            60 Paya Lebar Road, #06-53,<br>
-            Paya Lebar Square,<br>
-            Singapore 409051
-          </div>
         </div>
 
         <!-- Column 2: Solutions -->
@@ -329,7 +330,7 @@
           <ul class="space-y-2 text-xs font-sans text-on-surface-variant">
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Workflow Automation (n8n/Make)</a>
             </li>
-            <li><a href="/ai-services" class="hover:text-secondary transition-colors">Secure Enterprise GenAI</a></li>
+            <li><a href="/ai-services" class="hover:text-secondary transition-colors">Private AI &amp; Knowledge Base</a></li>
             <li><a href="/project-management" class="hover:text-secondary transition-colors">Corporate Project Management &amp; PMP®
                 Training</a></li>
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Managed AI Operations</a></li>
@@ -351,7 +352,6 @@
         <div class="space-y-4">
           <h4 class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">Direct Contact</h4>
           <div class="space-y-2 text-xs font-mono text-on-surface-variant">
-            <div>Phone: +65 8907 6453</div>
             <div>Email: advisory@projectai.sg</div>
           </div>
           <a href="https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20services."

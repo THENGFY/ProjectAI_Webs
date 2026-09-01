@@ -242,6 +242,30 @@ input:focus, select:focus, textarea:focus {
   animation: data-grid-scroll 20s linear infinite;
 }
 
+/* Atmospheric Translucent AI Topology Background (Groundup.ai style) */
+@keyframes neural-drift {
+  0%, 100% {
+    transform: scale(1) translateY(0);
+    opacity: 0.38;
+  }
+  50% {
+    transform: scale(1.03) translateY(-10px);
+    opacity: 0.46;
+  }
+}
+
+.bg-neural-mesh {
+  background-image: url('/image/ai-bg-neural.jpg');
+  background-position: center 18%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  filter: contrast(1.15) brightness(1.1);
+  mask-image: radial-gradient(ellipse 95% 85% at 50% 35%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.55) 80%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 95% 85% at 50% 35%, rgba(0, 0, 0, 1) 40%, rgba(0, 0, 0, 0.55) 80%, transparent 100%);
+  animation: neural-drift 14s ease-in-out infinite;
+}
+
 /* Radar & Pulse Animations */
 @keyframes pulse-slow {
   0%, 100% { opacity: 0.3; transform: scale(1); }
