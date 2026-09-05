@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
   
   <!-- App Styles -->
-  <link rel="stylesheet" crossorigin href="/assets/style-C_D6M_pT.css">
+  <link rel="stylesheet" crossorigin href="/assets/style-8YK7J2ND.css">
 </head>
 <body class="bg-surface-container-lowest text-on-surface font-sans selection:bg-secondary/30 selection:text-secondary relative min-h-screen">
 
@@ -104,7 +104,7 @@
           <div class="space-y-3.5 pt-2 text-xs font-mono text-on-surface-variant">
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-secondary text-base">mail</span>
-              <span class="text-on-surface font-semibold">advisory@projectai.sg</span>
+              <span class="text-on-surface font-semibold">info@ProjectAI.Asia</span>
             </div>
             <div class="flex items-center gap-3">
               <span class="material-symbols-outlined text-secondary text-base">domain</span>
@@ -191,10 +191,13 @@
               <select class="w-full bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface px-4 py-3 rounded text-sm transition-all">
                 <option>Logistics, Shipping &amp; Supply Chain</option>
                 <option>Retail, Wholesale &amp; E-commerce</option>
-                <option>Professional Services &amp; Consulting</option>
+                <option>Professional &amp; Business Services</option>
+                <option>Healthcare, Dental &amp; Wellness Clinics</option>
+                <option>Real Estate &amp; Property Management</option>
+                <option>Food &amp; Beverage (F&B)</option>
                 <option>Manufacturing &amp; Engineering</option>
                 <option>Accounting, Legal &amp; Financial Services</option>
-                <option>Other SME Sectors</option>
+                <option>Others</option>
               </select>
             </div>
 
@@ -224,14 +227,14 @@
             <!-- Project Scope Textarea -->
             <div class="space-y-1.5">
               <label class="font-mono text-xs text-on-surface-variant uppercase tracking-wider">Operational Bottlenecks / Goals</label>
-              <textarea rows="4" placeholder="Briefly describe your current manual bottlenecks, repetitive workflows, or desired team upskilling goals..." class="w-full bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface px-4 py-3 rounded text-sm transition-all resize-none"></textarea>
+              <textarea rows="4" placeholder="Briefly describe your current manual bottlenecks, pain points, or desired team upskilling goals..." class="w-full bg-surface-container-lowest/80 border border-outline-variant/40 text-on-surface px-4 py-3 rounded text-sm transition-all resize-none"></textarea>
             </div>
 
             <!-- Checkbox -->
             <div class="flex items-start gap-3 pt-1">
               <input required id="privacy" type="checkbox" class="mt-1 rounded bg-surface-container-lowest border-outline-variant/40 text-secondary focus:ring-secondary">
               <label for="privacy" class="text-xs text-on-surface-variant">
-                I agree to the <a href="/contact" class="text-secondary hover:underline">Privacy Policy</a> and authorize ProjectAI to contact me regarding my consultation.
+                I agree to the <button type="button" onclick="openLegalModal('privacy')" class="text-secondary hover:underline font-semibold focus:outline-none">Privacy Policy</button> and authorize ProjectAI to contact me regarding my consultation.
               </label>
             </div>
 
@@ -241,10 +244,10 @@
               <span>Submit Consultation Request</span>
             </button>
 
-            <div class="text-center font-mono text-xs text-on-surface-variant/70 flex items-center justify-center gap-1.5">
+            <button type="button" onclick="openLegalModal('security')" class="w-full text-center font-mono text-xs text-on-surface-variant/70 flex items-center justify-center gap-1.5 hover:text-secondary transition-colors focus:outline-none">
               <span class="material-symbols-outlined text-sm text-secondary">encrypted</span>
               <span>Strict 256-bit encrypted data handling protocol</span>
-            </div>
+            </button>
 
           </form>
         </div>
@@ -299,7 +302,7 @@
         <div class="space-y-4">
           <h4 class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">Direct Contact</h4>
           <div class="space-y-2 text-xs font-mono text-on-surface-variant">
-            <div>Email: advisory@projectai.sg</div>
+            <div>Email: info@ProjectAI.Asia</div>
           </div>
           <a href="https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20services." 
              target="_blank" 
@@ -315,16 +318,317 @@
       <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-on-surface-variant">
         <div>© 2026 projectai LLP. All Rights Reserved. UEN: [Your UEN Number]</div>
         <div class="flex gap-6">
-          <a href="/contact" class="hover:text-secondary transition-colors">Privacy Policy</a>
-          <a href="/contact" class="hover:text-secondary transition-colors">Terms of Service</a>
-          <a href="/contact" class="hover:text-secondary transition-colors">Security Overview</a>
+          <button type="button" onclick="openLegalModal('privacy')" class="hover:text-secondary transition-colors focus:outline-none">Privacy Policy</button>
+          <button type="button" onclick="openLegalModal('terms')" class="hover:text-secondary transition-colors focus:outline-none">Terms of Service</button>
+          <button type="button" onclick="openLegalModal('security')" class="hover:text-secondary transition-colors focus:outline-none">Security Overview</button>
         </div>
       </div>
     </div>
   </footer>
 
+  <!-- Slide-Out Legal Modal / Drawer -->
+  <div id="legalDrawerBackdrop" 
+       class="fixed inset-0 z-[70] bg-black/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300 flex justify-end"
+       onclick="handleBackdropClick(event)">
+    <div id="legalDrawer" 
+         class="relative w-full max-w-2xl bg-surface-container-low border-l border-outline-variant/30 h-full flex flex-col shadow-2xl transform translate-x-full transition-transform duration-300 ease-out">
+      
+      <!-- Drawer Header -->
+      <div class="p-6 border-b border-outline-variant/30 flex items-center justify-between bg-surface-container-lowest/90 sticky top-0 z-10">
+        <div>
+          <div class="flex items-center gap-2">
+            <span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+            <span class="font-mono text-xs text-secondary uppercase tracking-widest">Singapore Legal &amp; Governance</span>
+          </div>
+          <h2 id="legalModalTitle" class="font-display text-xl font-bold text-on-surface mt-1">Privacy Policy &amp; Terms</h2>
+        </div>
+        <button onclick="closeLegalModal()" 
+                class="w-9 h-9 rounded-full bg-surface-variant/40 hover:bg-surface-variant text-on-surface-variant hover:text-on-surface flex items-center justify-center transition-all focus:outline-none"
+                aria-label="Close modal">
+          <span class="material-symbols-outlined text-xl">close</span>
+        </button>
+      </div>
+
+      <!-- Navigation Tabs -->
+      <div class="flex border-b border-outline-variant/30 bg-surface-container-lowest/50 px-6 pt-3 gap-2 overflow-x-auto font-mono text-xs">
+        <button id="tabBtn-privacy" onclick="switchLegalTab('privacy')" 
+                class="tab-btn px-4 py-2.5 rounded-t font-semibold transition-all border-b-2 border-secondary text-secondary bg-surface-container-low">
+          Privacy Policy (PDPA)
+        </button>
+        <button id="tabBtn-terms" onclick="switchLegalTab('terms')" 
+                class="tab-btn px-4 py-2.5 rounded-t font-semibold transition-all border-b-2 border-transparent text-on-surface-variant hover:text-on-surface">
+          Terms of Service
+        </button>
+        <button id="tabBtn-security" onclick="switchLegalTab('security')" 
+                class="tab-btn px-4 py-2.5 rounded-t font-semibold transition-all border-b-2 border-transparent text-on-surface-variant hover:text-on-surface">
+          Security Overview
+        </button>
+      </div>
+
+      <!-- Drawer Scrollable Body -->
+      <div class="flex-1 overflow-y-auto p-6 sm:p-8 space-y-6 text-sm text-on-surface-variant leading-relaxed custom-scrollbar">
+        
+        <!-- Tab 1: Privacy Policy -->
+        <div id="tabContent-privacy" class="space-y-6">
+          <div class="p-4 rounded-lg bg-secondary/10 border border-secondary/30 text-xs font-mono text-secondary flex items-start gap-3">
+            <span class="material-symbols-outlined text-lg shrink-0">verified_user</span>
+            <div>
+              <strong class="text-on-surface block">Singapore PDPA (2012) &amp; Enterprise AI Governance Standard</strong>
+              Zero foundation model training on client data. Robust enterprise privacy protection tailored for Singapore and regional businesses.
+            </div>
+          </div>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">01.</span> Entity Scope &amp; Applicable Law
+            </h3>
+            <p>
+              ProjectAI LLP ("ProjectAI", "we", "us", or "our") is a partnership registered in the Republic of Singapore. This Privacy Policy governs the collection, use, processing, and protection of personal and corporate data in strict accordance with the <strong class="text-on-surface">Singapore Personal Data Protection Act 2012 (PDPA)</strong>, advisory guidelines issued by the Personal Data Protection Commission (PDPC), and Singapore's <strong class="text-on-surface">Model AI Governance Framework</strong>.
+            </p>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">02.</span> Roles: Data Controller vs. Data Intermediary
+            </h3>
+            <p class="text-xs">
+              To protect both ProjectAI and our enterprise clients, roles under the PDPA are defined as follows:
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 text-xs">
+              <li><strong class="text-on-surface">Direct Website Inquiries:</strong> For inquiries submitted directly through this website or discovery forms, ProjectAI acts as a <em>Data Controller / Organisation</em>, collecting only necessary contact and project scoping details.</li>
+              <li><strong class="text-on-surface">Client AI Implementations:</strong> When deploying bespoke automations, private LLMs, or knowledge bases on client infrastructure, ProjectAI acts strictly as a <em>Data Intermediary (Data Processor)</em> under Section 4(2) of the PDPA. The Client remains the Data Controller responsible for securing all requisite employee, customer, and end-user consents.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">03.</span> Information We Collect &amp; Lawful Processing Grounds
+            </h3>
+            <div class="space-y-2 text-xs">
+              <p>We collect and process information under the legal grounds of consent, legitimate business interest, and contractual necessity:</p>
+              <ul class="list-disc pl-5 space-y-1 text-xs">
+                <li><strong class="text-on-surface">Business Contact Information:</strong> Name, corporate email address, business WhatsApp/phone number, company designation, and entity name.</li>
+                <li><strong class="text-on-surface">Operational &amp; Architecture Scoping:</strong> Industry domain, operational bottlenecks, software stack (e.g., CRM, ERP), and workflow parameters provided in consultation requests.</li>
+                <li><strong class="text-on-surface">Cybersecurity &amp; Session Telemetry:</strong> Anonymized technical logs, browser types, and IP addresses strictly used for firewall security, anti-DDoS, and server auditability.</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">04.</span> Zero Foundation Model Training Guarantee
+            </h3>
+            <div class="p-3.5 rounded bg-surface-container-lowest/80 border border-outline-variant/40 font-mono text-xs space-y-2">
+              <div class="text-secondary font-bold flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-sm">shield</span>
+                <span>Enterprise Non-Training Covenant:</span>
+              </div>
+              <p class="text-on-surface-variant">
+                ProjectAI guarantees that client proprietary documents, prompt payloads, vector embeddings, and database records processed through enterprise zero-data-retention (ZDR) endpoints are <strong>never</strong> utilized to train, fine-tune, or reinforce public foundation models (including OpenAI, Anthropic, or Google Cloud models).
+              </p>
+            </div>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">05.</span> Anonymized Benchmarking &amp; Research Rights
+            </h3>
+            <p class="text-xs">
+              ProjectAI reserves the right to compile and utilize aggregated, de-identified, and anonymized operational telemetry (e.g., generalized workflow latency reductions, average hours saved across industries) strictly for producing industry research benchmarks, ROI indices, and improving proprietary advisory methodologies, without disclosing any client-identifiable or confidential records.
+            </p>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">06.</span> Sub-Processors &amp; Third-Party Infrastructure
+            </h3>
+            <p class="text-xs">
+              We partner with industry-standard, SOC2/ISO 27001 certified cloud and communication infrastructure providers (such as AWS, Cloudflare, Supabase, and WhatsApp Business API) to operate our advisory communications. Third parties are restricted from utilizing personal data for any purpose other than providing necessary infrastructure support.
+            </p>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">07.</span> Anti-Scraping &amp; Intellectual Property Notice
+            </h3>
+            <p class="text-xs">
+              Automated crawling, scraping, data mining, or extraction of ProjectAI’s interactive simulators, ROI calculators, architectural blueprints, or website copy for any commercial purpose or AI model training without prior written authorization is strictly prohibited.
+            </p>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">08.</span> Data Subject Rights &amp; DPO Contact
+            </h3>
+            <p class="text-xs">
+              Subject to verification and statutory exemptions under the PDPA, you may request access to, correction of, or withdrawal of consent for your personal data by contacting our designated Data Protection Officer:
+            </p>
+            <div class="p-3.5 rounded bg-surface-container-lowest/60 border border-outline-variant/30 text-xs font-mono space-y-1">
+              <div><span class="text-on-surface-variant">Designation:</span> Data Protection Officer (DPO)</div>
+              <div><span class="text-on-surface-variant">Email:</span> <a href="mailto:info@ProjectAI.Asia" class="text-secondary font-semibold hover:underline">info@ProjectAI.Asia</a></div>
+              <div><span class="text-on-surface-variant">Entity:</span> ProjectAI LLP (Singapore)</div>
+              <div><span class="text-on-surface-variant">Response Window:</span> Within 30 calendar days upon identity verification</div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Tab 2: Terms of Service -->
+        <div id="tabContent-terms" class="space-y-6 hidden">
+          <div class="p-4 rounded-lg bg-secondary/10 border border-secondary/30 text-xs font-mono text-secondary flex items-start gap-3">
+            <span class="material-symbols-outlined text-lg shrink-0">gavel</span>
+            <div>
+              <strong class="text-on-surface block">Enterprise Service Terms &amp; SOW Governance</strong>
+              Legally protective engagement terms, AI IP segregation, API dependency disclaimers, and 3-month liability caps.
+            </div>
+          </div>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">01.</span> Engagement Scope &amp; SOW Precedence
+            </h3>
+            <p>
+              ProjectAI LLP delivers enterprise AI workflow architecture, private knowledge base deployments, and corporate project management upskilling. Deliverables, payment milestones, and technical specifications are defined in mutually executed <strong class="text-on-surface">Statements of Work (SOW)</strong> or Master Services Agreements (MSA). In the event of any conflict between this website's general terms and an executed SOW, the specific SOW shall strictly prevail.
+            </p>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">02.</span> Intellectual Property Segregation
+            </h3>
+            <ul class="list-disc pl-5 space-y-1.5 text-xs">
+              <li><strong class="text-on-surface">Client Data &amp; Bespoke Deliverables:</strong> All client data, raw database records, proprietary vector embeddings, and custom workflow automations built specifically for the Client shall become the property of the Client upon full settlement of contract fees.</li>
+              <li><strong class="text-on-surface">ProjectAI Core Engine IP:</strong> ProjectAI retains sole and exclusive ownership of all pre-existing software libraries, architectural frameworks, prompt engineering templates, ROI calculators, and generalized workflow modules, which ProjectAI may freely reuse in other client engagements.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">03.</span> AI Probabilistic Output &amp; Hallucination Disclaimer
+            </h3>
+            <p class="text-xs">
+              Large Language Models (LLMs) and Generative AI systems operate probabilistically. While ProjectAI implements strict deterministic validation schemas, prompt guardrails, and automated checks:
+            </p>
+            <ul class="list-disc pl-5 space-y-1.5 text-xs">
+              <li>AI-generated classifications, summaries, and responses are provided to augment human productivity and require human-in-the-loop oversight for critical financial, legal, medical, or statutory decisions.</li>
+              <li>Calculators, time-saving estimates, and simulation blueprints on this website are illustrative models and do not constitute a contractual warranty of specific commercial outcomes.</li>
+            </ul>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">04.</span> Upstream API &amp; Model Dependencies
+            </h3>
+            <p class="text-xs">
+              Custom AI pipelines rely on upstream foundation model providers and cloud SaaS platforms (e.g., Anthropic, OpenAI, Google Cloud, n8n, Make). ProjectAI shall not be held liable for third-party API service outages, latency spikes, breaking schema modifications, rate-limiting policies, or upstream model deprecations beyond ProjectAI's reasonable control.
+            </p>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">05.</span> Prohibited Uses &amp; Anti-Scraping Protection
+            </h3>
+            <p class="text-xs">
+              You agree not to: (a) reverse-engineer, decompile, or extract source code or simulation algorithms from this website; (b) deploy automated bots, spiders, or scrapers to extract website copy, calculators, or architectural diagrams; or (c) publish public benchmark tests or comparative performance reviews of ProjectAI's solutions without prior written authorization.
+            </p>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">06.</span> Delivery, Hypercare &amp; Maintenance Boundaries
+            </h3>
+            <p class="text-xs">
+              Following user acceptance testing (UAT) and deployment, ProjectAI provides a complimentary hypercare stabilization window as specified in the SOW. Requests for new integrations, workflow modifications, or adjustments necessitated by third-party tool changes after hypercare require a separate Change Order or an ongoing Care &amp; Maintenance Agreement.
+            </p>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">07.</span> Limitation of Liability
+            </h3>
+            <p class="text-xs">
+              To the maximum extent permitted by Singapore law, ProjectAI LLP’s aggregate financial liability arising under or in connection with any engagement (whether in contract, tort, negligence, or otherwise) shall be strictly capped at the total professional fees actually received by ProjectAI from the Client under the applicable SOW in the three (3) months preceding the event giving rise to liability. In no event shall ProjectAI be liable for loss of profits, business interruption, or consequential damages.
+            </p>
+          </section>
+
+          <section class="space-y-3">
+            <h3 class="font-display text-base font-bold text-on-surface flex items-center gap-2">
+              <span class="text-secondary font-mono text-sm">08.</span> Governing Law &amp; Dispute Resolution
+            </h3>
+            <p class="text-xs">
+              These Terms, Statements of Work, and all related matters shall be governed exclusively by and construed in accordance with the laws of the <strong class="text-on-surface">Republic of Singapore</strong>. Any dispute arising out of or in connection with these Terms shall be subject to the exclusive jurisdiction of the Courts of Singapore.
+            </p>
+          </section>
+        </div>
+
+        <!-- Tab 3: Security Overview -->
+        <div id="tabContent-security" class="space-y-6 hidden">
+          <div class="p-4 rounded-lg bg-secondary/10 border border-secondary/30 text-xs font-mono text-secondary flex items-start gap-3">
+            <span class="material-symbols-outlined text-lg shrink-0">lock</span>
+            <div>
+              <strong class="text-on-surface block">Enterprise Security Architecture</strong>
+              Bank-grade encryption, tenant isolation, and strict access controls.
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs font-mono">
+            <div class="p-4 rounded bg-surface-container-lowest/80 border border-outline-variant/40 space-y-1.5">
+              <div class="text-secondary font-bold flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-base">vpn_key</span>
+                <span>TLS 1.3 &amp; AES-256</span>
+              </div>
+              <p class="text-on-surface-variant font-sans text-xs">All API data in transit is encrypted using modern TLS 1.3 cipher suites, with AES-256 encryption at rest.</p>
+            </div>
+
+            <div class="p-4 rounded bg-surface-container-lowest/80 border border-outline-variant/40 space-y-1.5">
+              <div class="text-secondary font-bold flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-base">cloud_done</span>
+                <span>Tenant Isolation</span>
+              </div>
+              <p class="text-on-surface-variant font-sans text-xs">Private vector stores and RAG embeddings are isolated within client VPCs or dedicated multi-tenant schemas.</p>
+            </div>
+
+            <div class="p-4 rounded bg-surface-container-lowest/80 border border-outline-variant/40 space-y-1.5">
+              <div class="text-secondary font-bold flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-base">security</span>
+                <span>Zero Retention Endpoints</span>
+              </div>
+              <p class="text-on-surface-variant font-sans text-xs">Foundation model calls route exclusively through commercial zero-logging enterprise tiers.</p>
+            </div>
+
+            <div class="p-4 rounded bg-surface-container-lowest/80 border border-outline-variant/40 space-y-1.5">
+              <div class="text-secondary font-bold flex items-center gap-1.5">
+                <span class="material-symbols-outlined text-base">history</span>
+                <span>Audit &amp; Access Controls</span>
+              </div>
+              <p class="text-on-surface-variant font-sans text-xs">Role-based access control (RBAC) and immutable logging for administrative traceability.</p>
+            </div>
+          </div>
+
+          <section class="space-y-2 pt-2 text-xs">
+            <h4 class="font-bold text-on-surface">Compliance Inquiries</h4>
+            <p>For custom security questionnaires or SOC2 / ISO compliance documentation, contact our security advisory team at <a href="mailto:info@ProjectAI.Asia" class="text-secondary underline">info@ProjectAI.Asia</a>.</p>
+          </section>
+        </div>
+
+      </div>
+
+      <!-- Drawer Footer -->
+      <div class="p-5 sm:p-6 border-t border-outline-variant/30 bg-surface-container-lowest flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="text-xs font-mono text-on-surface-variant text-center sm:text-left">
+          Questions? <a href="mailto:info@ProjectAI.Asia" class="text-secondary hover:underline">info@ProjectAI.Asia</a>
+        </div>
+        <button onclick="closeLegalModal()" 
+                class="w-full sm:w-auto px-6 py-2.5 bg-secondary text-on-secondary font-bold text-xs rounded hover:opacity-90 transition-opacity text-center shadow-md">
+          Understood &amp; Close
+        </button>
+      </div>
+
+    </div>
+  </div>
+
   <!-- Floating WhatsApp Quick-Action Button -->
-  <a href="https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20services." 
+  <a id="floatingWhatsApp"
+     href="https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20services." 
      target="_blank" 
      rel="noopener noreferrer" 
      aria-label="Chat on WhatsApp"
@@ -335,7 +639,7 @@
     <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out font-medium text-sm pl-0 group-hover:pl-2">Chat with us</span>
   </a>
 
-  <!-- Script for Form Feedback & Mobile Menu -->
+  <!-- Script for Form Feedback, Legal Modal & Mobile Menu -->
   <script>
     const mobileMenuBtn = document.getElementById('mobileMenuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -367,6 +671,83 @@
         }, 1200);
       });
     }
+
+    // Legal Drawer Modal Logic
+    const legalBackdrop = document.getElementById('legalDrawerBackdrop');
+    const legalDrawer = document.getElementById('legalDrawer');
+    const floatingWhatsApp = document.getElementById('floatingWhatsApp');
+    const tabs = ['privacy', 'terms', 'security'];
+
+    function openLegalModal(tabName = 'privacy') {
+      if (!legalBackdrop || !legalDrawer) return;
+      switchLegalTab(tabName);
+      
+      // Hide floating WhatsApp button when modal is open to prevent overlap
+      if (floatingWhatsApp) {
+        floatingWhatsApp.classList.add('opacity-0', 'pointer-events-none');
+      }
+
+      legalBackdrop.classList.remove('hidden');
+      // Trigger animation
+      setTimeout(() => {
+        legalBackdrop.classList.remove('opacity-0');
+        legalDrawer.classList.remove('translate-x-full');
+      }, 10);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLegalModal() {
+      if (!legalBackdrop || !legalDrawer) return;
+      legalBackdrop.classList.add('opacity-0');
+      legalDrawer.classList.add('translate-x-full');
+      
+      // Restore floating WhatsApp button
+      if (floatingWhatsApp) {
+        floatingWhatsApp.classList.remove('opacity-0', 'pointer-events-none');
+      }
+
+      setTimeout(() => {
+        legalBackdrop.classList.add('hidden');
+        document.body.style.overflow = '';
+      }, 300);
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target === legalBackdrop) {
+        closeLegalModal();
+      }
+    }
+
+    function switchLegalTab(activeTab) {
+      tabs.forEach(tab => {
+        const btn = document.getElementById(`tabBtn-${tab}`);
+        const content = document.getElementById(`tabContent-${tab}`);
+        if (!btn || !content) return;
+        
+        if (tab === activeTab) {
+          btn.className = 'tab-btn px-4 py-2.5 rounded-t font-semibold transition-all border-b-2 border-secondary text-secondary bg-surface-container-low';
+          content.classList.remove('hidden');
+        } else {
+          btn.className = 'tab-btn px-4 py-2.5 rounded-t font-semibold transition-all border-b-2 border-transparent text-on-surface-variant hover:text-on-surface';
+          content.classList.add('hidden');
+        }
+      });
+    }
+
+    // ESC key listener to close modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && legalBackdrop && !legalBackdrop.classList.contains('hidden')) {
+        closeLegalModal();
+      }
+    });
+
+    // Handle hash on page load (e.g. contact.html#privacy)
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (tabs.includes(hash)) {
+        openLegalModal(hash);
+      }
+    });
   </script>
 
 </body>
