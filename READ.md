@@ -4,6 +4,30 @@ Comprehensive technical documentation, architectural comparisons, design standar
 
 ---
 
+## 🚀 Quick Startup: Run Development Server
+
+### 1. Start Local Development Server
+```bash
+# Install dependencies (first-time setup)
+npm install
+
+# Run the Vite development server
+npm run dev
+```
+- Development server URL: **`http://localhost:5173/`**
+- Features: Instant Hot Module Replacement (HMR), Tailwind CSS compilation, and clean route rewrites.
+
+### 2. Build & Preview Production Bundle
+```bash
+# Compile and minify assets into /dist
+npm run build
+
+# Preview production build locally
+npm run preview
+```
+
+---
+
 ## 1. Project Overview
 
 The website is a high-converting, enterprise-grade multi-page corporate platform designed for an AI consulting and project management firm.
@@ -116,3 +140,31 @@ graph LR
 - **Step 3:** Centralize reusable components (`Navbar`, `Footer`, `WhatsAppWidget`, `Layout`).
 - **Step 4:** Add interactive enhancements (scroll reveals, metric counters, form validation toast).
 - **Step 5:** Perform cross-breakpoint validation (Mobile `375px`, Tablet `768px`, Desktop `1440px`) and deploy to Vercel.
+
+---
+
+## 7. Google Search & Domain Indexing Setup (`www.projectai.asia`)
+
+To ensure the website is indexed and easily found on Google Search when users search for **"project ai asia"**, **"project ai"**, or the domain **`www.projectai.asia`**:
+
+### 1. Verification Meta Tag
+Each HTML file contains the Google Search Console verification meta tag in `<head>`:
+```html
+<meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE"/>
+```
+- Go to [Google Search Console](https://search.google.com/search-console/).
+- Add your property: `https://www.projectai.asia/`.
+- Under **HTML Tag verification**, copy the code string and replace `YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE` in the HTML files (or verify via DNS TXT record).
+
+### 2. Search Crawler Directives & Canonical URLs
+- **Canonical URLs:** Configured per page (`https://www.projectai.asia/`, `/ai-services`, `/project-management`, `/contact`).
+- **Robots Directives:** Explicit instructions for `googlebot`, `googlebot-image`, and `bingbot` (`index, follow, max-snippet:-1, max-image-preview:large`).
+
+### 3. XML Sitemap & Robots.txt
+- **`public/robots.txt`**: Directs search engine spiders and references `https://www.projectai.asia/sitemap.xml`.
+- **`public/sitemap.xml`**: Lists all 4 canonical URLs with last modified timestamps, priority weighting, and change frequencies.
+- Automatically copied to `/dist/robots.txt` and `/dist/sitemap.xml` upon build.
+
+### 4. Schema.org JSON-LD Structured Data
+Includes rich entity graph annotations (`WebSite`, `Organization`, `ProfessionalService`, `BreadcrumbList`, and `Course`) with alternate brand names and search queries:
+- `"alternateName": ["ProjectAI", "Project AI", "Project AI Asia", "projectai.asia", "www.projectai.asia", "Project AI Asai"]`

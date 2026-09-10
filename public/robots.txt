@@ -1,0 +1,17 @@
+# ProjectAI Asia (https://www.projectai.asia)
+# Robots.txt for Googlebot and Web Crawlers
+
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /image/
+
+User-agent: Bingbot
+Allow: /
+
+# XML Sitemap location for search indexing
+Sitemap: https://www.projectai.asia/sitemap.xml

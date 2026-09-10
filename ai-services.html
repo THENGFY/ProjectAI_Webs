@@ -4,9 +4,94 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>AI Services &amp; Workflow Automation | ProjectAI</title>
-  <meta name="description"
-    content="Custom agentic workflows (n8n/Make), private AI &amp; knowledge base, predictive analytics, and managed MLOps engineered specifically for Singapore SMEs." />
+  <!-- Primary Meta Tags -->
+  <title>AI Services &amp; Workflow Automation | ProjectAI Asia</title>
+  <meta name="title" content="AI Services &amp; Workflow Automation | ProjectAI Asia"/>
+  <meta name="description" content="Custom agentic workflows (n8n/Make), private AI &amp; knowledge base, predictive analytics, and managed MLOps engineered specifically for Singapore SMEs."/>
+  <meta name="keywords" content="ProjectAI, Project AI Asia, AI services Singapore, workflow automation, n8n automation, Make.com integration, enterprise GenAI, private LLM, predictive analytics, MLOps, projectai.asia, www.projectai.asia, project ai asai"/>
+  <meta name="author" content="ProjectAI Asia"/>
+  <meta name="publisher" content="ProjectAI Asia"/>
+  <meta name="geo.region" content="SG"/>
+  <meta name="geo.placename" content="Singapore"/>
+
+  <!-- Google Search Console Verification Tag -->
+  <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE"/>
+
+  <!-- Search Engine Crawlers & Indexing -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+  <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"/>
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.projectai.asia/ai-services"/>
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.projectai.asia/ai-services"/>
+  <meta property="og:site_name" content="ProjectAI Asia"/>
+  <meta property="og:title" content="AI Services &amp; Workflow Automation | ProjectAI Asia"/>
+  <meta property="og:description" content="Custom agentic workflows, private LLM deployment, and predictive analytics engineered specifically for Singapore SMEs."/>
+  <meta property="og:image" content="https://www.projectai.asia/image/Company_logo.png"/>
+  <meta property="og:locale" content="en_SG"/>
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:url" content="https://www.projectai.asia/ai-services"/>
+  <meta name="twitter:title" content="AI Services &amp; Workflow Automation | ProjectAI Asia"/>
+  <meta name="twitter:description" content="Custom agentic workflows, private LLM deployment, and predictive analytics engineered specifically for Singapore SMEs."/>
+  <meta name="twitter:image" content="https://www.projectai.asia/image/Company_logo.png"/>
+
+  <!-- Google Structured Data (JSON-LD Breadcrumbs & Service Schema) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.projectai.asia/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AI Services",
+            "item": "https://www.projectai.asia/ai-services"
+          }
+        ]
+      },
+      {
+        "@type": "Service",
+        "serviceType": "AI Workflow Automation & Model Deployment",
+        "provider": {
+          "@type": "Organization",
+          "name": "ProjectAI Asia",
+          "url": "https://www.projectai.asia/"
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Singapore"
+        },
+        "description": "Custom agentic workflows, private LLM fine-tuning, predictive analytics, and enterprise MLOps."
+      }
+    ]
+  }
+  </script>
+
+  <!-- Theme Initialization (prevents FOUC) -->
+  <script>
+    (function() {
+      const saved = localStorage.getItem('projectai_theme');
+      if (saved === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    })();
+  </script>
 
   <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,15 +111,16 @@
 
   <!-- Ambient High-Tech Background -->
   <div class="fixed inset-0 z-[-1] overflow-hidden pointer-events-none">
-    <div class="absolute inset-0 bg-[#0B0F10]"></div>
+    <div class="absolute inset-0 bg-surface-container-lowest transition-colors duration-300"></div>
     <!-- Translucent AI Neural Mesh Image Layer (Groundup.ai style) -->
     <div class="absolute inset-0 bg-neural-mesh"></div>
     <div class="absolute inset-[-100%] bg-data-grid opacity-25"></div>
+    <div class="absolute inset-0 bg-transparent dark:bg-black/10 pointer-events-none"></div>
     <div
-      class="absolute top-1/3 -right-32 w-96 h-96 bg-secondary/15 rounded-full blur-[140px] mix-blend-screen animate-pulse-slow">
+      class="absolute top-1/3 -right-32 w-96 h-96 bg-secondary/10 rounded-full blur-[140px] mix-blend-multiply dark:mix-blend-screen">
     </div>
     <div
-      class="absolute bottom-1/4 -left-32 w-96 h-96 bg-secondary-container/15 rounded-full blur-[150px] mix-blend-screen">
+      class="absolute bottom-1/4 -left-32 w-96 h-96 bg-secondary-container/10 rounded-full blur-[150px] mix-blend-multiply dark:mix-blend-screen">
     </div>
   </div>
 
@@ -55,22 +141,27 @@
       </a>
 
       <!-- Desktop Nav Menu -->
-      <div class="hidden md:flex items-center gap-8">
-        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm font-medium tracking-wide"
+      <div class="hidden md:flex items-center gap-7 lg:gap-9">
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-base md:text-[17px] lg:text-[18px] font-semibold"
           href="/">Home</a>
-        <a class="text-secondary font-semibold border-b-2 border-secondary pb-1 text-sm tracking-wide transition-all"
+        <a class="text-secondary font-bold border-b-2 border-secondary pb-1 text-base md:text-[17px] lg:text-[18px] transition-all"
           href="/ai-services">AI Services</a>
-        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm font-medium tracking-wide"
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-base md:text-[17px] lg:text-[18px] font-semibold"
           href="/project-management">Project Management</a>
-        <a class="text-on-surface-variant hover:text-secondary transition-colors text-sm font-medium tracking-wide"
+        <a class="text-on-surface-variant hover:text-secondary transition-colors text-base md:text-[17px] lg:text-[18px] font-semibold"
           href="/contact">Contact</a>
       </div>
 
       <!-- Action Button & Mobile Toggle -->
-      <div class="flex items-center gap-4">
+      <div class="flex items-center gap-3">
+        <!-- Theme Toggle Button -->
+        <button type="button" class="theme-toggle-btn w-11 h-11 rounded-xl border border-outline-variant/40 bg-surface-container/60 hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface transition-all focus:outline-none flex items-center justify-center shadow-sm" aria-label="Switch to Dark Mode" title="Switch to Dark Mode">
+          <span class="theme-toggle-icon material-symbols-outlined text-[24px] transition-transform duration-300">dark_mode</span>
+        </button>
+
         <button id="mobileMenuBtn" aria-label="Toggle Navigation Menu"
-          class="md:hidden p-2 text-on-surface-variant hover:text-secondary focus:outline-none">
-          <span class="material-symbols-outlined text-2xl">menu</span>
+          class="md:hidden w-11 h-11 flex items-center justify-center rounded-xl text-on-surface-variant hover:text-secondary focus:outline-none">
+          <span class="material-symbols-outlined text-[26px]">menu</span>
         </button>
       </div>
     </div>
@@ -78,46 +169,51 @@
     <!-- Mobile Drawer Menu -->
     <div id="mobileMenu"
       class="hidden md:hidden bg-surface-container-high/95 backdrop-blur-xl border-b border-outline-variant/30 px-6 py-6 space-y-4">
-      <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/">Home</a>
-      <a class="block text-secondary font-semibold text-base py-2 border-l-2 border-secondary pl-3"
+      <a class="block text-on-surface-variant hover:text-secondary font-semibold text-lg sm:text-xl py-2.5 pl-3" href="/">Home</a>
+      <a class="block text-secondary font-bold text-lg sm:text-xl py-2.5 border-l-2 border-secondary pl-3"
         href="/ai-services">AI Services</a>
-      <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3"
+      <a class="block text-on-surface-variant hover:text-secondary font-semibold text-lg sm:text-xl py-2.5 pl-3"
         href="/project-management">Project Management</a>
-      <a class="block text-on-surface-variant hover:text-secondary text-base py-2 pl-3" href="/contact">Contact</a>
+      <a class="block text-on-surface-variant hover:text-secondary font-semibold text-lg sm:text-xl py-2.5 pl-3" href="/contact">Contact</a>
+      <div class="pt-4 border-t border-outline-variant/30 flex items-center justify-between">
+        <span class="text-sm text-on-surface-variant font-mono font-medium">Theme Appearance</span>
+        <button type="button" class="theme-toggle-btn px-4 py-2 rounded-xl border border-outline-variant/40 bg-surface-container/60 hover:bg-surface-container text-on-surface-variant hover:text-on-surface transition-all flex items-center gap-2.5 text-sm sm:text-base font-semibold" aria-label="Switch to Dark Mode" title="Switch to Dark Mode">
+          <span class="theme-toggle-icon material-symbols-outlined text-[22px]">dark_mode</span>
+          <span>Toggle Mode</span>
+        </button>
+      </div>
     </div>
   </nav>
 
   <!-- Hero Header -->
-  <main class="pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
-    <header class="mb-20 max-w-3xl">
+  <main class="pt-28 sm:pt-32 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto relative z-10">
+    <header class="mb-12 sm:mb-20 max-w-3xl">
       <div
-        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-xs uppercase tracking-widest mb-6">
-        <span class="material-symbols-outlined text-sm">memory</span>
-        ENGINEERED FOR SINGAPORE SMES
+        class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 dark:bg-surface-container-lowest/85 backdrop-blur-md text-black dark:text-[#5DE6FF] font-mono text-xs font-bold uppercase tracking-wide sm:tracking-widest mb-6 max-w-full">
+        <span class="material-symbols-outlined text-sm shrink-0">memory</span>
+        <span>ENGINEERED FOR SINGAPORE SMES</span>
       </div>
       <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
         <span class="shimmer-text">Practical AI Solutions for</span> <br>
-        <span class="shimmer-text-cyan">
-          Real Business Impact.
-        </span>
+        <span class="shimmer-text-cyan">Real Business Impact.</span>
       </h1>
-      <p class="font-sans text-lg text-on-surface-variant leading-relaxed">
+      <p class="font-sans text-lg text-on-surface-variant dark:text-[#E0E3E5] leading-relaxed drop-shadow-sm">
         Stop losing productive hours to manual admin and fragmented systems. We engineer practical AI automations and train your team with the hands-on capability to run them—slashing operational overhead so your business can scale.
       </p>
     </header>
 
     <!-- Architecture Comparison: Prototype Sandbox vs Enterprise Production -->
-    <section class="mb-24">
+    <section class="mb-16 sm:mb-24">
       <div class="text-center max-w-2xl mx-auto mb-12">
         <div
-          class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-secondary/30 bg-secondary/10 text-secondary font-mono text-base uppercase tracking-wider mb-4">
+          class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-secondary/30 bg-secondary/10 text-black dark:text-secondary font-mono text-base font-semibold uppercase tracking-wider mb-4">
           <span class="material-symbols-outlined text-lg">compare_arrows</span>
           THE PRODUCTION REALITY GAP
         </div>
         <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-on-surface tracking-tight mb-4 leading-tight">
           Most Teams Can Demo AI.<br>
           <span
-            class="text-transparent bg-clip-text bg-gradient-to-r from-secondary via-[#5DE6FF] to-secondary-container">Few
+            class="text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-secondary dark:via-[#5DE6FF] dark:to-secondary-container">Few
             Can Run It Inside Production.</span>
         </h2>
         <p class="font-sans text-sm text-on-surface-variant leading-relaxed">
@@ -129,42 +225,42 @@
 
         <!-- Left: Fragile Prototype Trap -->
         <div
-          class="p-8 md:p-10 rounded-2xl bg-surface-container-lowest/90 border border-error/25 relative overflow-hidden group">
-          <div class="absolute top-0 right-0 w-36 h-36 bg-error/5 rounded-full blur-2xl pointer-events-none"></div>
+          class="p-5 sm:p-8 md:p-10 rounded-2xl bg-surface-container-lowest/90 border border-red-500/30 dark:border-error/25 relative overflow-hidden group shadow-[0_4px_20px_rgba(0,0,0,0.03)]">
+          <div class="absolute top-0 right-0 w-36 h-36 bg-red-500/5 dark:bg-error/5 rounded-full blur-2xl pointer-events-none"></div>
           <div class="flex items-center justify-between mb-6 pb-4 border-b border-outline-variant/20">
             <div class="flex items-center gap-3">
               <div
-                class="w-8 h-8 rounded-lg bg-error/10 border border-error/30 flex items-center justify-center text-error">
+                class="w-8 h-8 rounded-lg bg-red-700/10 border border-red-700/30 dark:bg-error/10 dark:border-error/30 flex items-center justify-center text-red-700 dark:text-error">
                 <span class="material-symbols-outlined text-base">close</span>
               </div>
-              <span class="font-mono text-xs font-bold text-error uppercase tracking-widest">THE SANDBOX DEMO TRAP</span>
+              <span class="font-mono text-xs font-bold text-red-700 dark:text-error uppercase tracking-widest">THE SANDBOX DEMO TRAP</span>
             </div>
             <span
-              class="font-mono text-[11px] text-error bg-error/10 px-2.5 py-1 rounded border border-error/30">Fragile Prototype</span>
+              class="font-mono text-xs font-bold text-red-700 dark:text-error bg-red-700/10 dark:bg-error/10 px-3 py-1 rounded border border-red-700/30 dark:border-error/30">Fragile Prototype</span>
           </div>
 
           <h3 class="font-display text-xl font-bold text-on-surface mb-3 tracking-tight">
             Why 80% of Internal AI Projects Stall
           </h3>
-          <p class="font-sans text-sm text-on-surface-variant mb-6 leading-relaxed">
+          <p class="font-sans text-base sm:text-[17px] text-on-surface-variant mb-6 leading-relaxed">
             Quick chat demos look impressive in meetings, but break immediately when connected to real-world business data, strict compliance guidelines, and live customer traffic.
           </p>
 
-          <ul class="space-y-4 font-sans text-xs text-on-surface-variant">
+          <ul class="space-y-4 font-sans text-sm sm:text-base text-on-surface-variant">
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">cancel</span>
+              <span class="material-symbols-outlined text-red-700 dark:text-error text-lg sm:text-xl shrink-0 mt-0.5">cancel</span>
               <span><strong class="text-on-surface font-semibold">Isolated Chat Interface:</strong> AI is trapped in a disconnected web tab; not integrated with your CRM, invoicing tools, ERP, or company databases.</span>
             </li>
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">cancel</span>
+              <span class="material-symbols-outlined text-red-700 dark:text-error text-lg sm:text-xl shrink-0 mt-0.5">cancel</span>
               <span><strong class="text-on-surface font-semibold">Data Leakage &amp; Compliance Risks:</strong> Public AI tools store and train on sensitive financial records, staff data, and confidential customer information.</span>
             </li>
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">cancel</span>
+              <span class="material-symbols-outlined text-red-700 dark:text-error text-lg sm:text-xl shrink-0 mt-0.5">cancel</span>
               <span><strong class="text-on-surface font-semibold">Zero Data Guardrails &amp; Permission Controls:</strong> Hallucinations go unchecked, and staff can access unauthorized confidential documents without proper role-based permission tiers.</span>
             </li>
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-error text-base shrink-0 mt-0.5">cancel</span>
+              <span class="material-symbols-outlined text-red-700 dark:text-error text-lg sm:text-xl shrink-0 mt-0.5">cancel</span>
               <span><strong class="text-on-surface font-semibold">Zero Internal Ownership &amp; Untrained Teams:</strong> Once external developers leave, internal staff lack the skills to operate, adapt, or maintain automated workflows as business processes evolve.</span>
             </li>
           </ul>
@@ -172,42 +268,42 @@
 
         <!-- Right: ProjectAI Production Core -->
         <div
-          class="p-8 md:p-10 rounded-2xl glass-panel-elevated border border-secondary/40 relative overflow-hidden group shadow-[0_0_30px_rgba(34,211,238,0.12)]">
+          class="p-5 sm:p-8 md:p-10 rounded-2xl glass-panel-elevated border border-outline-variant/40 dark:border-secondary/40 relative overflow-hidden group shadow-[0_4px_20px_rgba(0,0,0,0.05)] dark:shadow-[0_0_30px_rgba(34,211,238,0.12)]">
           <div class="absolute top-0 right-0 w-44 h-44 bg-secondary/15 rounded-full blur-3xl pointer-events-none"></div>
           <div class="flex items-center justify-between mb-6 pb-4 border-b border-outline-variant/30">
             <div class="flex items-center gap-3">
               <div
-                class="w-8 h-8 rounded-lg bg-secondary/20 border border-secondary/40 flex items-center justify-center text-secondary">
+                class="w-8 h-8 rounded-lg bg-black/5 dark:bg-secondary/20 border border-black/20 dark:border-secondary/40 flex items-center justify-center text-black dark:text-secondary">
                 <span class="material-symbols-outlined text-base">check</span>
               </div>
-              <span class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">PROJECTAI PRODUCTION CORE</span>
+              <span class="font-mono text-xs font-bold text-black dark:text-secondary uppercase tracking-widest">PROJECTAI PRODUCTION CORE</span>
             </div>
             <span
-              class="font-mono text-[11px] text-secondary bg-secondary/10 border border-secondary/30 px-2.5 py-1 rounded shadow-[0_0_10px_rgba(34,211,238,0.2)]">Production Ready</span>
+              class="font-mono text-xs font-bold text-black dark:text-secondary bg-black/5 dark:bg-secondary/10 border border-black/20 dark:border-secondary/30 px-3 py-1 rounded dark:shadow-[0_0_10px_rgba(34,211,238,0.2)]">Production Ready</span>
           </div>
 
           <h3 class="font-display text-xl font-bold text-on-surface mb-3 tracking-tight">
             Automation That Actually Runs Your Business
           </h3>
-          <p class="font-sans text-sm text-on-surface-variant mb-6 leading-relaxed">
+          <p class="font-sans text-base sm:text-[17px] text-on-surface-variant mb-6 leading-relaxed">
             We build secure, production-grade AI pipelines wired directly into your daily tools, backed by strict data privacy, governance, and hands-on team training.
           </p>
 
-          <ul class="space-y-4 font-sans text-xs text-on-surface-variant">
+          <ul class="space-y-4 font-sans text-sm sm:text-base text-on-surface-variant">
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">verified</span>
+              <span class="material-symbols-outlined text-black dark:text-secondary text-lg sm:text-xl shrink-0 mt-0.5">verified</span>
               <span><strong class="text-on-surface font-semibold">Embedded Workflow Orchestration:</strong> Autonomous n8n / Make.com engines wired directly into your CRM, accounting tools (Xero/QuickBooks), email, and databases.</span>
             </li>
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">verified</span>
+              <span class="material-symbols-outlined text-black dark:text-secondary text-lg sm:text-xl shrink-0 mt-0.5">verified</span>
               <span><strong class="text-on-surface font-semibold">Zero Public Data Leakage:</strong> On-premise or private cloud architectures ensuring complete data ownership and strict Singapore PDPA compliance.</span>
             </li>
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">verified</span>
+              <span class="material-symbols-outlined text-black dark:text-secondary text-lg sm:text-xl shrink-0 mt-0.5">verified</span>
               <span><strong class="text-on-surface font-semibold">Strict Guardrails &amp; Permission Controls:</strong> Multi-tier verification loops prevent hallucinations, enforce role-based access, and maintain clear audit trails.</span>
             </li>
             <li class="flex items-start gap-3">
-              <span class="material-symbols-outlined text-secondary text-base shrink-0 mt-0.5">verified</span>
+              <span class="material-symbols-outlined text-black dark:text-secondary text-lg sm:text-xl shrink-0 mt-0.5">verified</span>
               <span><strong class="text-on-surface font-semibold">Build + Train Model &amp; Ongoing Care:</strong> Comprehensive team upskilling paired with post-launch warranty and maintenance to ensure seamless long-term operational reliability.</span>
             </li>
           </ul>
@@ -217,41 +313,41 @@
     </section>
 
     <!-- Services Detailed Grid -->
-    <div class="space-y-16">
+    <div class="space-y-12 sm:space-y-16">
 
       <!-- Service 01: Workflow Automation & Agentic Orchestration -->
-      <section class="glass-panel p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <section class="glass-panel p-5 sm:p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center">
           <div class="lg:col-span-7 space-y-6">
-            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 01 // CORE
+            <span class="font-mono text-xs text-black dark:text-secondary font-bold tracking-widest uppercase block">SERVICE 01 // CORE
               AUTOMATION</span>
             <h2 class="font-display text-2xl sm:text-3xl font-bold text-on-surface">
               Workflow Automation &amp; Agentic AI Orchestration
             </h2>
-            <p class="font-sans text-on-surface-variant leading-relaxed">
+            <p class="font-sans text-base sm:text-lg text-on-surface-variant leading-relaxed">
               Tired of your team spending hours manually copying data between emails, WhatsApp, spreadsheets, and accounting? We engineer automated AI pipelines that capture inquiries, generate quotes, reconcile invoices against Xero, and trigger instant cross-team approvals in seconds.
             </p>
 
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 font-mono text-xs">
-              <div class="p-3.5 rounded-lg bg-surface-container-lowest/80 border border-outline-variant/30">
-                <div class="text-secondary font-bold mb-1">24/7 LEAD QUALIFICATION</div>
-                <div class="text-on-surface-variant">Auto-reply &amp; meeting booking on WhatsApp &amp; CRM</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 font-mono text-sm">
+              <div class="p-4 rounded-lg bg-surface-container-lowest/80 border border-outline-variant/30">
+                <div class="text-black dark:text-secondary font-bold mb-1">24/7 LEAD QUALIFICATION</div>
+                <div class="text-on-surface-variant text-xs sm:text-sm font-sans">Auto-reply &amp; meeting booking on WhatsApp &amp; CRM</div>
               </div>
-              <div class="p-3.5 rounded-lg bg-surface-container-lowest/80 border border-outline-variant/30">
-                <div class="text-secondary font-bold mb-1">INVOICE &amp; DOC EXTRACTION</div>
-                <div class="text-on-surface-variant">Auto-reconcile receipts &amp; invoices into Xero / QuickBooks</div>
+              <div class="p-4 rounded-lg bg-surface-container-lowest/80 border border-outline-variant/30">
+                <div class="text-black dark:text-secondary font-bold mb-1">INVOICE &amp; DOC EXTRACTION</div>
+                <div class="text-on-surface-variant text-xs sm:text-sm font-sans">Auto-reconcile receipts &amp; invoices into Xero / QuickBooks</div>
               </div>
             </div>
           </div>
 
           <div class="lg:col-span-5">
             <div
-              class="p-6 rounded-xl bg-surface-container-lowest/90 border border-outline-variant/40 font-mono text-xs space-y-3.5">
+              class="p-4 sm:p-6 rounded-xl bg-surface-container-lowest/90 border border-outline-variant/40 font-mono text-xs sm:text-sm space-y-3.5">
               <div
-                class="text-secondary font-bold flex items-center justify-between border-b border-outline-variant/30 pb-2.5">
+                class="text-black dark:text-secondary font-bold flex items-center justify-between border-b border-outline-variant/30 pb-2.5">
                 <span>PIPELINE_AGENT_STATUS</span>
               </div>
-              <div class="space-y-2 text-on-surface-variant text-[11px] sm:text-xs">
+              <div class="space-y-2.5 text-on-surface-variant text-xs sm:text-sm">
                 <div class="flex justify-between items-center gap-2">
                   <span>Trigger:</span>
                   <span class="text-on-surface text-right font-medium">New Webhook Ingestion (Make.com / n8n)</span>
@@ -266,15 +362,15 @@
                 </div>
                 <div class="flex justify-between items-center gap-2">
                   <span>Privacy Perimeter:</span>
-                  <span class="text-secondary text-right font-medium">100% PDPA Safe / Zero Public Training</span>
+                  <span class="text-black dark:text-secondary text-right font-medium">100% PDPA Safe / Zero Public Training</span>
                 </div>
                 <div class="flex justify-between items-center gap-2">
                   <span>Execution Time:</span>
-                  <span class="text-secondary font-bold">420ms</span>
+                  <span class="text-black dark:text-secondary font-bold">420ms</span>
                 </div>
                 <div class="flex justify-between items-center gap-2">
                   <span>Error Rate:</span>
-                  <span class="text-green-400 font-bold">0.00%</span>
+                  <span class="text-green-700 dark:text-green-400 font-bold">0.00%</span>
                 </div>
               </div>
             </div>
@@ -283,29 +379,29 @@
       </section>
 
       <!-- Service 02: Private AI & Knowledge Base -->
-      <section class="glass-panel p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <section class="glass-panel p-5 sm:p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center">
           <div class="lg:col-span-7 space-y-6">
-            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 02 // SECURE
+            <span class="font-mono text-xs text-black dark:text-secondary font-bold tracking-widest uppercase block">SERVICE 02 // SECURE
               INTELLIGENCE</span>
             <h2 class="font-display text-2xl sm:text-3xl font-bold text-on-surface">
               Secure Company AI &amp; Private Knowledge Base
             </h2>
-            <p class="font-sans text-on-surface-variant leading-relaxed">
+            <p class="font-sans text-base sm:text-lg text-on-surface-variant leading-relaxed">
               Stop interrupting senior managers to answer basic operational and policy questions. We build a secure, private company AI assistant that searches across your contracts, SOPs, and product catalogues to deliver exact, cited answers instantly—guaranteed 100% private under Singapore PDPA.
             </p>
 
-            <ul class="space-y-2.5 font-mono text-xs text-on-surface">
-              <li class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary text-sm">lock</span>
+            <ul class="space-y-3 font-mono text-sm sm:text-base text-on-surface font-medium">
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-black dark:text-secondary text-base sm:text-lg">lock</span>
                 Zero Training on Public AI (100% Private &amp; Isolated)
               </li>
-              <li class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary text-sm">search</span>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-black dark:text-secondary text-base sm:text-lg">search</span>
                 Instant Page-by-Page Cited Answers Across 1,000+ Files
               </li>
-              <li class="flex items-center gap-2">
-                <span class="material-symbols-outlined text-secondary text-sm">shield</span>
+              <li class="flex items-center gap-2.5">
+                <span class="material-symbols-outlined text-black dark:text-secondary text-base sm:text-lg">shield</span>
                 Role-Based Permissions (Strict HR &amp; Financial File Security)
               </li>
             </ul>
@@ -313,22 +409,22 @@
 
           <div class="lg:col-span-5">
             <div
-              class="p-6 rounded-xl bg-surface-container-lowest/90 border border-outline-variant/40 font-mono text-xs space-y-4 shadow-[0_0_20px_rgba(0,0,0,0.25)]">
+              class="p-4 sm:p-6 rounded-xl bg-surface-container-lowest/90 border border-outline-variant/40 font-mono text-xs sm:text-sm space-y-4 shadow-[0_0_20px_rgba(0,0,0,0.25)]">
               <div
                 class="text-on-surface font-bold flex flex-wrap items-center justify-between gap-2 border-b border-outline-variant/30 pb-2.5">
-                <span class="text-secondary tracking-wider">PROJECTAI DATA GATEWAY</span>
-                <span class="text-[10px] sm:text-[11px] text-on-surface-variant font-medium bg-surface-container-high px-2 py-0.5 rounded border border-outline-variant/30">AES-256 ENCRYPTED // PDPA COMPLIANT</span>
+                <span class="text-black dark:text-secondary font-bold tracking-wider">PROJECTAI DATA GATEWAY</span>
+                <span class="text-xs sm:text-sm text-on-surface-variant font-medium bg-surface-container-high px-2.5 py-1 rounded border border-outline-variant/30">AES-256 ENCRYPTED // PDPA COMPLIANT</span>
               </div>
               <div class="p-3.5 rounded-lg bg-surface-container-high/60 border border-outline-variant/20 space-y-2">
-                <div class="text-[11px] text-secondary font-semibold">Query: "What is our refund and cancellation policy under the 2026 Customer Agreement?"</div>
-                <div class="text-xs text-on-surface leading-relaxed font-sans bg-surface-container-lowest/70 p-2.5 rounded border border-outline-variant/20">
-                  "Found in <span class="text-secondary font-mono">customer_terms_2026.pdf</span> (Page 4, Clause 8.2 • Confidence: 99.4%): Full refunds apply within 14 days of purchase provided digital onboarding has not commenced."
+                <div class="text-xs sm:text-sm text-black dark:text-secondary font-semibold">Query: "What is our refund and cancellation policy under the 2026 Customer Agreement?"</div>
+                <div class="text-xs sm:text-sm text-on-surface leading-relaxed font-sans bg-surface-container-lowest/70 p-2.5 rounded border border-outline-variant/20">
+                  "Found in <span class="text-black dark:text-secondary font-mono font-semibold">customer_terms_2026.pdf</span> (Page 4, Clause 8.2 • Confidence: 99.4%): Full refunds apply within 14 days of purchase provided digital onboarding has not commenced."
                 </div>
               </div>
-              <div class="text-[11px] text-on-surface-variant flex flex-wrap items-center justify-between gap-2 pt-1">
-                <span class="font-mono">Latency: <strong class="text-secondary">82ms</strong></span>
-                <span class="text-green-400 font-medium inline-flex items-center gap-1.5 bg-green-500/10 border border-green-500/20 px-2.5 py-1 rounded">
-                  <span class="w-1.5 h-1.5 rounded-full bg-green-400"></span>
+              <div class="text-xs sm:text-sm text-on-surface-variant flex flex-wrap items-center justify-between gap-2 pt-1">
+                <span class="font-mono">Latency: <strong class="text-black dark:text-secondary font-bold">82ms</strong></span>
+                <span class="text-green-700 dark:text-green-400 font-bold inline-flex items-center gap-1.5 bg-green-500/10 border border-green-500/20 px-2.5 py-1 rounded">
+                  <span class="w-1.5 h-1.5 rounded-full bg-green-600 dark:bg-green-400"></span>
                   Zero Public Exposure • Local RAG Architecture
                 </span>
               </div>
@@ -338,72 +434,72 @@
       </section>
 
       <!-- Service 03: Predictive Modeling & Business Intelligence -->
-      <section class="glass-panel p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <section class="glass-panel p-5 sm:p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 sm:gap-10 items-center">
           <div class="lg:col-span-7 space-y-6">
             <div class="space-y-1">
-              <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 03 // PREDICTIVE
+              <span class="font-mono text-xs text-black dark:text-secondary font-bold tracking-widest uppercase block">SERVICE 03 // PREDICTIVE
                 ANALYTICS</span>
-              <div class="text-xs font-mono text-secondary/80 font-medium tracking-wide">Turn Historical Data into Tomorrow’s Cash Flow Advantage.</div>
+              <div class="text-xs sm:text-sm font-mono text-black dark:text-secondary font-semibold tracking-wide">Turn Historical Data into Tomorrow’s Cash Flow Advantage.</div>
             </div>
             <h2 class="font-display text-2xl sm:text-3xl font-bold text-on-surface">
               Predictive Modeling &amp; Business Intelligence
             </h2>
-            <p class="font-sans text-on-surface-variant leading-relaxed">
+            <p class="font-sans text-base sm:text-lg text-on-surface-variant leading-relaxed">
               Eliminate guesswork and stop trapping working capital in excess stock. We build custom machine learning models that anticipate demand surges, optimize reorder timing, and pinpoint at-risk revenue before clients walk away.
             </p>
 
-            <div class="flex flex-wrap gap-3 font-mono text-xs">
+            <div class="flex flex-wrap gap-2.5 sm:gap-3 font-mono text-sm">
               <span
-                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-high border border-outline-variant/30 text-secondary">
-                <span class="material-symbols-outlined text-sm">trending_up</span>
+                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-high border border-outline-variant/30 text-black dark:text-secondary font-medium">
+                <span class="material-symbols-outlined text-base text-black dark:text-secondary">trending_up</span>
                 Demand &amp; Reorder Forecasting
               </span>
               <span
-                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-high border border-outline-variant/30 text-secondary">
-                <span class="material-symbols-outlined text-sm">warning</span>
+                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-high border border-outline-variant/30 text-black dark:text-secondary font-medium">
+                <span class="material-symbols-outlined text-base text-black dark:text-secondary">warning</span>
                 Early Churn Warning System
               </span>
               <span
-                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-high border border-outline-variant/30 text-secondary">
-                <span class="material-symbols-outlined text-sm">bar_chart</span>
+                class="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-surface-container-high border border-outline-variant/30 text-black dark:text-secondary font-medium">
+                <span class="material-symbols-outlined text-base text-black dark:text-secondary">bar_chart</span>
                 Automated KPI &amp; Revenue Reporting
               </span>
             </div>
           </div>
 
           <div
-            class="lg:col-span-5 text-center p-8 md:p-10 rounded-2xl bg-surface-container-lowest/90 border border-secondary/30 shadow-[0_0_20px_rgba(0,0,0,0.25)]">
-            <div class="font-mono text-5xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-secondary via-white to-secondary-container mb-2">&gt; 85%</div>
-            <div class="font-mono text-xs text-secondary font-bold uppercase tracking-wider mb-3">FORECAST PRECISION &amp; ACCURACY</div>
-            <p class="text-xs text-on-surface-variant font-sans leading-relaxed">Validated across retail, distribution, and recurring revenue business models in Singapore.</p>
+            class="lg:col-span-5 text-center p-6 sm:p-8 md:p-10 rounded-2xl bg-surface-container-lowest/90 border border-secondary/30 shadow-[0_0_20px_rgba(0,0,0,0.25)]">
+            <div class="font-mono text-5xl md:text-6xl font-extrabold text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-secondary dark:via-white dark:to-secondary-container mb-2">&gt; 85%</div>
+            <div class="font-mono text-xs text-black dark:text-secondary font-bold uppercase tracking-wider mb-3">FORECAST PRECISION &amp; ACCURACY</div>
+            <p class="text-xs sm:text-sm text-on-surface-variant font-sans leading-relaxed">Validated across retail, distribution, and recurring revenue business models in Singapore.</p>
           </div>
         </div>
       </section>
 
       <!-- Service 04: Managed AI Support & Operational Care -->
-      <section class="glass-panel p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
+      <section class="glass-panel p-5 sm:p-8 md:p-12 rounded-2xl micro-glow relative overflow-hidden">
         <div class="space-y-6">
           <div class="space-y-1">
-            <span class="font-mono text-xs text-secondary tracking-widest uppercase block">SERVICE 04 // OPERATIONAL
+            <span class="font-mono text-xs text-black dark:text-secondary font-bold tracking-widest uppercase block">SERVICE 04 // OPERATIONAL
               CARE</span>
-            <div class="text-xs font-mono text-secondary/80 font-medium tracking-wide">Enterprise-Grade Reliability Without the Overhead of a Full-Time AI Team.</div>
+            <div class="text-xs sm:text-sm font-mono text-black dark:text-secondary font-semibold tracking-wide">Enterprise-Grade Reliability Without the Overhead of a Full-Time AI Team.</div>
           </div>
           <h2 class="font-display text-2xl sm:text-3xl font-bold text-on-surface">
             Managed AI Support &amp; Operational Care
           </h2>
-          <p class="font-sans text-on-surface-variant leading-relaxed max-w-3xl">
+          <p class="font-sans text-base sm:text-lg text-on-surface-variant leading-relaxed max-w-3xl">
             Avoid the high payroll costs of hiring an internal AI engineering team. We deliver proactive operational care—monitoring model drift, maintaining API connectors as platforms evolve, and guaranteeing high-uptime reliability for your mission-critical workflows.
           </p>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 font-mono text-xs max-w-3xl">
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 font-mono text-sm max-w-3xl">
             <div class="p-4 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 space-y-2">
-              <div class="text-secondary font-bold tracking-wider">30-DAY STABILIZATION &amp; LAUNCH WARRANTY</div>
-              <div class="text-on-surface-variant font-sans text-xs leading-relaxed">Complimentary post-deployment tuning, workflow bug fixes, and hands-on staff handover to ensure smooth adoption.</div>
+              <div class="text-black dark:text-secondary font-bold tracking-wider">30-DAY STABILIZATION &amp; LAUNCH WARRANTY</div>
+              <div class="text-on-surface-variant font-sans text-xs sm:text-sm leading-relaxed">Complimentary post-deployment tuning, workflow bug fixes, and hands-on staff handover to ensure smooth adoption.</div>
             </div>
             <div class="p-4 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 space-y-2">
-              <div class="text-secondary font-bold tracking-wider">FRACTIONAL AI OPERATIONS RETAINER</div>
-              <div class="text-on-surface-variant font-sans text-xs leading-relaxed">Scheduled pipeline health checks, API/schema updates, model upgrades, and priority response SLAs when third-party tools change.</div>
+              <div class="text-black dark:text-secondary font-bold tracking-wider">FRACTIONAL AI OPERATIONS RETAINER</div>
+              <div class="text-on-surface-variant font-sans text-xs sm:text-sm leading-relaxed">Scheduled pipeline health checks, API/schema updates, model upgrades, and priority response SLAs when third-party tools change.</div>
             </div>
           </div>
         </div>
@@ -414,7 +510,7 @@
     <!-- Production-Grade Tech Stacks & Frameworks -->
     <section class="mt-20 pt-16 border-t border-outline-variant/20 text-center">
       <div class="space-y-1.5 mb-8 max-w-2xl mx-auto">
-        <span class="font-mono text-sm text-secondary uppercase tracking-wider block font-semibold">
+        <span class="font-mono text-sm text-black dark:text-secondary uppercase tracking-wider block font-bold">
           PRODUCTION-GRADE TECH STACKS &amp; FRAMEWORKS
         </span>
         <div class="text-sm font-mono text-on-surface-variant font-medium tracking-wide">
@@ -469,7 +565,7 @@
         </a>
         <a href="https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20AI%20Services."
           target="_blank" rel="noopener noreferrer"
-          class="border border-[#25D366]/40 text-[#25D366] px-8 py-4 rounded font-mono text-sm flex items-center justify-center gap-2 hover:bg-[#25D366]/10 transition-colors">
+          class="border border-green-700/40 dark:border-[#25D366]/40 text-green-700 dark:text-[#25D366] px-8 py-4 rounded font-mono text-sm flex items-center justify-center gap-2 hover:bg-green-700/10 dark:hover:bg-[#25D366]/10 transition-colors">
           <span>Chat on WhatsApp</span>
         </a>
       </div>
@@ -501,7 +597,7 @@
 
         <!-- Column 2: Solutions -->
         <div class="space-y-3">
-          <h4 class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">Solutions</h4>
+          <h4 class="font-mono text-xs font-bold text-black dark:text-secondary uppercase tracking-widest">Solutions</h4>
           <ul class="space-y-2 text-xs font-sans text-on-surface-variant">
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">Workflow Automation (n8n/Make)</a>
             </li>
@@ -514,7 +610,7 @@
 
         <!-- Column 3: Navigation -->
         <div class="space-y-3">
-          <h4 class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">Company</h4>
+          <h4 class="font-mono text-xs font-bold text-black dark:text-secondary uppercase tracking-widest">Company</h4>
           <ul class="space-y-2 text-xs font-sans text-on-surface-variant">
             <li><a href="/" class="hover:text-secondary transition-colors">Home</a></li>
             <li><a href="/ai-services" class="hover:text-secondary transition-colors">AI Services</a></li>
@@ -525,14 +621,14 @@
 
         <!-- Column 4: Direct Channels & WhatsApp -->
         <div class="space-y-4">
-          <h4 class="font-mono text-xs font-bold text-secondary uppercase tracking-widest">Direct Contact</h4>
+          <h4 class="font-mono text-xs font-bold text-black dark:text-secondary uppercase tracking-widest">Direct Contact</h4>
           <div class="space-y-2 text-xs font-mono text-on-surface-variant">
             <div>Email: info@ProjectAI.Asia</div>
           </div>
           <a href="https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20would%20like%20to%20inquire%20about%20your%20services."
             target="_blank" rel="noopener noreferrer"
-            class="inline-flex items-center gap-2 px-3 py-2 rounded bg-[#25D366]/10 border border-[#25D366]/40 text-[#25D366] text-xs font-mono hover:bg-[#25D366]/20 transition-colors">
-            <span class="w-2 h-2 rounded-full bg-[#25D366] animate-ping"></span>
+            class="inline-flex items-center gap-2 px-3 py-2 rounded bg-green-700/10 dark:bg-[#25D366]/10 border border-green-700/40 dark:border-[#25D366]/40 text-green-700 dark:text-[#25D366] text-xs font-mono hover:bg-green-700/20 dark:hover:bg-[#25D366]/20 transition-colors">
+            <span class="w-2 h-2 rounded-full bg-green-700 dark:bg-[#25D366] animate-ping"></span>
             <span>WhatsApp Business Online</span>
           </a>
         </div>
@@ -562,6 +658,8 @@
     }
   </script>
 
+  <!-- Theme Manager -->
+  <script type="module" src="/src/theme.js"></script>
 </body>
 
 </html>

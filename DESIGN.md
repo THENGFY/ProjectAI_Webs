@@ -104,14 +104,35 @@ The design system is built for high-stakes AI consultancy and project management
 
 The style is **Corporate Modern with subtle Glassmorphism**. It utilizes high-precision layouts, heavy whitespace, and high-quality typography to convey authority. The "futurist" aspect is introduced through vibrant cyan accents, precision data-viz elements, and subtle background blurs that suggest depth and advanced processing power without sacrificing professional clarity.
 
-## Colors
+## Colors & Background Themes
 
-The palette is anchored in a professional dark mode to emphasize the "high-tech" nature of AI services.
+### Background 1 (Active Default): Enterprise Futurist (Dark Mode)
+The active dark palette anchors the high-tech, autonomous AI engineering identity.
 
-- **Primary (Deep Midnight):** `#0F172A`. Used for main backgrounds and deep structural elements. It provides a stable, "infinite" canvas.
-- **Secondary (Vibrant Cyan):** `#22D3EE`. Reserved for high-priority actions, progress indicators, and active AI states. It acts as the "glow" of the technology.
-- **Tertiary (Slate Gray):** `#64748B`. Used for secondary text and borders to maintain a sophisticated, low-friction hierarchy.
-- **Neutral (Cloud White):** `#F8FAFC`. Used exclusively for primary headings and body text to ensure maximum legibility against the dark background.
+| Role | Token / Name | Hex Code | RGB | Best Used For |
+| :--- | :--- | :--- | :--- | :--- |
+| **Base Surface** | `surface-container-lowest` | `#0B0F10` | 11, 15, 16 | Main canvas, deepest page ambient background |
+| **Surface Base** | `surface` / `surface-dim` | `#101415` | 16, 20, 21 | Secondary structures, top navbar base |
+| **Card Surface** | `surface-container` | `#1D2022` | 29, 32, 34 | Standard glass cards, service panels |
+| **Elevated Surface** | `surface-container-high` | `#272A2C` | 39, 42, 44 | Hover states, interactive focus cards |
+| **Primary Text** | `on-surface` | `#E0E3E5` / `#F8FAFC` | 224, 227, 229 | Primary headings, body copy, active text |
+| **Muted Text / Border**| `outline` / `outline-variant` | `#909097` / `#45464D` | 144, 144, 151 | Secondary captions, card borders, subtle dividers |
+| **High-Tech Accent** | `secondary` (Vibrant Cyan) | `#22D3EE` | 34, 211, 238 | AI status dots, primary CTA buttons, glowing highlights |
+| **Deep Accent** | `primary-container` | `#0F172A` | 15, 23, 42 | High-contrast button containers, backdrop shading |
+
+---
+
+### Background 2 (Alternative): Warm Editorial & Strategic Advisory (Light Mode)
+A luxury editorial and human-centered management consultancy palette (McKinsey / Stripe Press / Monocle style).
+
+| Role | Color Name | Hex Code | RGB | Best Used For |
+| :--- | :--- | :--- | :--- | :--- |
+| **Base Surface** | Cream Alabaster | `#F9F6F0` | 249, 246, 240 | Main canvas, page background |
+| **Secondary Surface** | Warm Bone / Linen | `#F1ECE1` | 241, 236, 225 | Cards, alternating panels, borders |
+| **Primary Text** | Soft Ink Charcoal | `#2B2A27` | 43, 42, 39 | Body copy, editorial headlines |
+| **Muted Neutral** | Weathered Stone | `#8C857B` | 140, 133, 123 | Subheadings, captions, subtle outlines |
+| **Warm Accent** | Editorial Ochre | `#B88B4A` | 184, 139, 74 | Active links, callouts, micro-details |
+| **Deep Accent** | Burnt Umber | `#543D2B` | 84, 61, 43 | Primary buttons, emphasis tags, metadata |
 
 ## Typography
 
