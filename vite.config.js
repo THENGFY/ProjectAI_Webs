@@ -8,7 +8,7 @@ export default defineConfig({
       configureServer(server) {
         server.middlewares.use((req, res, next) => {
           if (req.url === '/project-management' || req.url === '/project') {
-            req.url = '/project.html';
+            req.url = '/project-management.html';
           } else if (req.url === '/ai-services') {
             req.url = '/ai-services.html';
           } else if (req.url === '/contact') {
@@ -24,6 +24,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         aiServices: resolve(__dirname, 'ai-services.html'),
+        projectManagement: resolve(__dirname, 'project-management.html'),
         project: resolve(__dirname, 'project.html'),
         contact: resolve(__dirname, 'contact.html')
       }

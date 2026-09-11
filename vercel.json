@@ -1,14 +1,13 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
-  "rewrites": [
-    { "source": "/ai-services", "destination": "/ai-services.html" },
-    { "source": "/AI%20Services.html", "destination": "/ai-services.html" },
-    { "source": "/AI Services.html", "destination": "/ai-services.html" },
-    { "source": "/project-management", "destination": "/project.html" },
-    { "source": "/Project.html", "destination": "/project.html" },
-    { "source": "/contact", "destination": "/contact.html" },
-    { "source": "/Contact.html", "destination": "/contact.html" }
+  "redirects": [
+    { "source": "/project", "destination": "/project-management", "permanent": true },
+    { "source": "/project.html", "destination": "/project-management", "permanent": true },
+    { "source": "/Project.html", "destination": "/project-management", "permanent": true },
+    { "source": "/AI%20Services.html", "destination": "/ai-services", "permanent": true },
+    { "source": "/AI Services.html", "destination": "/ai-services", "permanent": true },
+    { "source": "/Contact.html", "destination": "/contact", "permanent": true }
   ],
   "headers": [
     {
