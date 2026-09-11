@@ -225,7 +225,7 @@
         </h1>
 
         <p class="font-sans text-lg text-on-surface-variant dark:text-[#E0E3E5] leading-relaxed max-w-2xl drop-shadow-sm">
-          Stop losing 15+ hours every week to repetitive data entry, manual invoicing, and slow lead replies. We deploy practical AI automations wired directly into your daily tools—helping Singapore SMEs scale output without expanding payroll.
+          Stop losing 15+ hours every week to repetitive data entry, manual invoicing, and slow lead replies. We deploy practical AI automations wired directly into your daily tools—helping companies scale output without expanding payroll.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-4 pt-4">
@@ -377,62 +377,39 @@
     </div>
   </section>
 
-  <!-- DYNAMIC SECTION 1: Interactive Multi-Industry Workflow Simulator -->
+  <!-- DYNAMIC SECTION: Interactive ROI & Feasibility Calculator -->
   <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
     <div class="text-center max-w-3xl mx-auto mb-12">
       <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-secondary/30 bg-secondary/10 text-black dark:text-secondary font-mono text-base font-semibold uppercase tracking-wider mb-4">
-        <span class="material-symbols-outlined text-lg">hub</span>
-        PRODUCTION ARCHITECTURES IN ACTION
+        <span class="material-symbols-outlined text-lg">calculate</span>
+        ROI &amp; FEASIBILITY CALCULATOR
       </div>
       <h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-extrabold text-on-surface tracking-tight leading-tight">
-        Interactive Autonomous <br>
+        Estimate Your Monthly <br>
         <span class="text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-secondary dark:via-[#5DE6FF] dark:to-secondary-container">
-          Workflow Simulator
+          Cost &amp; Hours Reclaimed
         </span>
       </h2>
       <p class="font-sans text-base text-on-surface-variant mt-4">
-        Select an interactive business workflow below to see how ProjectAI orchestrates live data, security guardrails, and automated actions across your operations.
+        Calculate your projected time savings, operational efficiency gains, and monthly value reclaimed before deploying AI automation across your operations.
       </p>
     </div>
 
-    <!-- Simulator Container -->
-    <div class="glass-panel spotlight-card p-4 sm:p-6 md:p-10 rounded-2xl">
-      <!-- Tab Controls -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2 p-1.5 bg-surface-container-lowest/90 rounded-xl border border-outline-variant/30 max-w-2xl mx-auto mb-8 font-mono text-xs sm:text-sm">
-        <button id="tab-btn-crm" onclick="setSimTab('crm')" class="w-full py-3 px-3 sm:px-4 rounded-lg font-bold transition-all text-center bg-secondary text-on-secondary shadow-[0_0_15px_rgba(34,211,238,0.35)] min-h-[44px] flex items-center justify-center">
-          1. WHATSAPP &amp; CRM FUNNEL
-        </button>
-        <button id="tab-btn-finance" onclick="setSimTab('finance')" class="w-full py-3 px-3 sm:px-4 rounded-lg font-bold transition-all text-center text-on-surface-variant dark:text-white/80 hover:text-secondary min-h-[44px] flex items-center justify-center">
-          2. OPERATIONAL QUALITY SCAN
-        </button>
-        <button id="tab-btn-rag" onclick="setSimTab('rag')" class="w-full py-3 px-3 sm:px-4 rounded-lg font-bold transition-all text-center text-on-surface-variant dark:text-white/80 hover:text-secondary min-h-[44px] flex items-center justify-center">
-          3. PRIVATE KNOWLEDGE BASE
-        </button>
-      </div>
-
-      <!-- Dynamic Tab Content Box -->
-      <div id="sim-content" class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-        <!-- Will be dynamically injected via JavaScript -->
-      </div>
-    </div>
-  </section>
-
-  <!-- DYNAMIC SECTION 2: Interactive ROI & Time Savings Estimator -->
-  <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+    <!-- Calculator Card -->
     <div class="glass-panel-elevated spotlight-card p-5 sm:p-8 md:p-14 rounded-2xl relative overflow-hidden">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
         
         <div class="lg:col-span-6 space-y-6">
           <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 dark:bg-surface-container-lowest/80 text-black dark:text-secondary font-mono text-xs font-bold uppercase tracking-widest">
-            <span class="material-symbols-outlined text-sm">calculate</span>
-            ROI &amp; FEASIBILITY CALCULATOR
+            <span class="material-symbols-outlined text-sm">tune</span>
+            CALCULATOR PARAMETERS
           </div>
-          <h2 class="font-display text-3xl md:text-4xl font-extrabold text-on-surface leading-tight">
-            Estimate Your Monthly <br>
+          <h3 class="font-display text-2xl sm:text-3xl font-bold text-on-surface leading-tight">
+            Configure Your Team's <br>
             <span class="text-black dark:text-transparent dark:bg-clip-text dark:bg-gradient-to-r dark:from-secondary dark:to-secondary-container">
-              Cost &amp; Hours Reclaimed
+              Weekly Manual Workload
             </span>
-          </h2>
+          </h3>
           <p class="font-sans text-sm sm:text-base text-on-surface-variant dark:text-[#D1D5DB] leading-relaxed">
             Move the slider to reflect your team's weekly manual data entry, customer triage, or report compiling hours.
           </p>
@@ -461,7 +438,7 @@
               </div>
               <div class="p-3.5 sm:p-4 rounded-lg bg-surface-container-high/60 border border-outline-variant/30">
                 <div class="text-xs text-on-surface-variant dark:text-white/80 uppercase font-semibold">Efficiency Gain</div>
-                <div class="text-2xl sm:text-3xl font-extrabold text-green-700 dark:text-green-400 mt-1">> 85%</div>
+                <div class="text-2xl sm:text-3xl font-extrabold text-green-700 dark:text-green-400 mt-1">&gt; 85%</div>
               </div>
             </div>
 
@@ -569,49 +546,89 @@
     </div>
   </section>
 
-  <!-- Production-Grade Tech Stacks & Frameworks -->
+  <!-- Enterprise Integration Ecosystem -->
   <section class="py-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center border-t border-outline-variant/20">
-    <div class="space-y-1.5 mb-8 max-w-2xl mx-auto">
-      <span class="font-mono text-sm text-black dark:text-secondary uppercase tracking-wider block font-bold">
-        PRODUCTION-GRADE TECH STACKS &amp; FRAMEWORKS
-      </span>
-      <div class="text-sm font-mono text-on-surface-variant font-medium tracking-wide">
-        Enterprise-Grade Power, Engineered for Agile Business Growth.
+    <div class="space-y-2 mb-10 max-w-3xl mx-auto">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-secondary/30 bg-secondary/10 text-black dark:text-secondary font-mono text-xs font-bold uppercase tracking-widest mb-2">
+        <span class="material-symbols-outlined text-sm">hub</span>
+        ENTERPRISE INTEGRATION ECOSYSTEM
       </div>
+      <h2 class="font-display text-2xl sm:text-3xl md:text-4xl font-extrabold text-on-surface tracking-tight">
+        Wired Directly Into Your Existing Software
+      </h2>
+      <p class="text-sm sm:text-base font-sans text-on-surface-variant max-w-2xl mx-auto leading-relaxed">
+        Zero disruptive migrations. We deploy secure, PDPA-compliant webhook and API connectors that seamlessly bridge your accounting, CRM, and communication platforms.
+      </p>
     </div>
     
-    <div class="max-w-4xl mx-auto space-y-3 font-mono text-xs sm:text-sm">
-      <!-- Row 1 (Automation & Frameworks) -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
-          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
-          <span>n8n (Self-Hosted / Cloud)</span>
+    <div class="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3.5 text-left font-mono text-xs sm:text-sm">
+      
+      <!-- Integration 1: WhatsApp Business -->
+      <div class="p-4 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center gap-3.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm group">
+        <div class="w-10 h-10 rounded-lg bg-green-700/10 dark:bg-[#25D366]/10 border border-green-700/30 dark:border-[#25D366]/30 flex items-center justify-center text-green-700 dark:text-[#25D366] shrink-0 group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined text-xl">chat</span>
         </div>
-        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
-          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
-          <span>Make.com</span>
-        </div>
-        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
-          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
-          <span>LangChain / Multi-Agent Frameworks</span>
+        <div>
+          <div class="font-bold text-on-surface text-sm">WhatsApp Business API</div>
+          <div class="text-xs font-sans text-on-surface-variant mt-0.5">24/7 Inbound Triage &amp; Lead Booking</div>
         </div>
       </div>
 
-      <!-- Row 2 (Models, Vectors & Infrastructure) -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
-          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
-          <span>Claude 3.5, GPT-4o &amp; Llama 3</span>
+      <!-- Integration 2: Xero & Accounting -->
+      <div class="p-4 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center gap-3.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm group">
+        <div class="w-10 h-10 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary shrink-0 group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined text-xl">receipt_long</span>
         </div>
-        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
-          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
-          <span>pgvector / Qdrant (Secure Embeddings)</span>
-        </div>
-        <div class="p-3.5 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center justify-center gap-2.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm">
-          <span class="w-2 h-2 rounded-full bg-secondary shrink-0"></span>
-          <span>Docker / Containerized Infrastructure</span>
+        <div>
+          <div class="font-bold text-on-surface text-sm">Xero &amp; QuickBooks</div>
+          <div class="text-xs font-sans text-on-surface-variant mt-0.5">Automated Invoices &amp; Reconciliation</div>
         </div>
       </div>
+
+      <!-- Integration 3: HubSpot & Salesforce -->
+      <div class="p-4 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center gap-3.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm group">
+        <div class="w-10 h-10 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary shrink-0 group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined text-xl">contacts</span>
+        </div>
+        <div>
+          <div class="font-bold text-on-surface text-sm">HubSpot &amp; Salesforce</div>
+          <div class="text-xs font-sans text-on-surface-variant mt-0.5">Real-Time CRM &amp; Pipeline Enrichment</div>
+        </div>
+      </div>
+
+      <!-- Integration 4: Zoho & Google Workspace -->
+      <div class="p-4 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center gap-3.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm group">
+        <div class="w-10 h-10 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary shrink-0 group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined text-xl">folder_shared</span>
+        </div>
+        <div>
+          <div class="font-bold text-on-surface text-sm">Zoho &amp; Google Workspace</div>
+          <div class="text-xs font-sans text-on-surface-variant mt-0.5">Document Ingestion &amp; Calendar Sync</div>
+        </div>
+      </div>
+
+      <!-- Integration 5: Slack & Microsoft Teams -->
+      <div class="p-4 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center gap-3.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm group">
+        <div class="w-10 h-10 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary shrink-0 group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined text-xl">notifications_active</span>
+        </div>
+        <div>
+          <div class="font-bold text-on-surface text-sm">Slack &amp; Microsoft Teams</div>
+          <div class="text-xs font-sans text-on-surface-variant mt-0.5">Instant Staff Approvals &amp; Ops Alerts</div>
+        </div>
+      </div>
+
+      <!-- Integration 6: Custom Databases & ERPs -->
+      <div class="p-4 rounded-xl bg-surface-container-lowest/80 border border-outline-variant/30 backdrop-blur-md flex items-center gap-3.5 text-on-surface hover:border-secondary/40 transition-all shadow-sm group">
+        <div class="w-10 h-10 rounded-lg bg-secondary/10 border border-secondary/30 flex items-center justify-center text-secondary shrink-0 group-hover:scale-105 transition-transform">
+          <span class="material-symbols-outlined text-xl">database</span>
+        </div>
+        <div>
+          <div class="font-bold text-on-surface text-sm">PostgreSQL, MySQL &amp; ERPs</div>
+          <div class="text-xs font-sans text-on-surface-variant mt-0.5">Isolated VPC &amp; On-Premise Connectors</div>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -734,104 +751,7 @@
 
     document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
 
-    // 4. Interactive Multi-Industry Workflow Simulator Data
-    const simData = {
-      finance: {
-        title: "Real-Time Quality Inspection & Anomaly Detection",
-        subtitle: "Instantly spots product defects, packaging damage, and operational errors before delivery",
-        trigger: "Real-Time Camera Feed / Shipment Ingestion Trigger",
-        steps: [
-          { name: "Instant Visual Inspection AI", tech: "Computer Vision + Automated Defect Recognition", status: "Inspected (22ms)" },
-          { name: "Automated Quality & Tolerance Verification", tech: "Accuracy Threshold & Defect Classification Check", status: "Validated (35ms)" },
-          { name: "Automated Workflow Routing & ERP Alert", tech: "Instant Defect Flagging + Real-Time Operations Notification", status: "Triggered (14ms)" }
-        ],
-        summary: "Zero Damaged Shipments • 99.9% Inspection Accuracy • Instant Operations Alert"
-      },
-      crm: {
-        title: "24/7 WhatsApp Lead Qualification & Calendar Booking",
-        subtitle: "Captures, qualifies, and schedules inbound inquiries in < 30 seconds",
-        trigger: "New WhatsApp Business Chat Initiated (Webhook via Make.com / n8n)",
-        steps: [
-          { name: "Intent Analysis & Budget Scoping", tech: "PDPA-Safe Guardrailed Agent (GPT-4o / Local LLM)", status: "Qualified (0.9s)" },
-          { name: "Lead Score Assignment & CRM Update", tech: "HubSpot / Zoho CRM / Google Sheets Connector (via Make.com / n8n)", status: "Synced (0.6s)" },
-          { name: "Direct Meeting Link Dispatch", tech: "Calendly / Google Calendar Sync", status: "Dispatched (0.3s)" }
-        ],
-        summary: "Total Execution Time: ~1.8s • Instant WhatsApp Reply Sent • 100% PDPA Compliant"
-      },
-      rag: {
-        title: "Private & Secure Internal Company AI Search",
-        subtitle: "Instant, accurate operational search across 5,000+ internal SOPs, contracts, and company files",
-        trigger: "Employee Query: 'Find refund policy for damaged goods in Customer SOP'",
-        steps: [
-          { name: "Encrypted Internal Document Search", tech: "Private Vector Retrieval / Isolated Secure Storage", status: "Retrieved (65ms)" },
-          { name: "Staff Permission & Role-Based Access Controls", tech: "Internal Staff Verification & Department-Level Access Rules", status: "Authorized (12ms)" },
-          { name: "Direct Answer Synthesis with Source Verification", tech: "100% Confidential (Zero Public AI Training / No Data Leakage)", status: "Delivered (380ms)" }
-        ],
-        summary: "Zero Public Model Training • 100% Data Confidentiality • Instant Source Citations"
-      }
-    };
-
-    function renderSimContent(key) {
-      const data = simData[key];
-      const container = document.getElementById('sim-content');
-      if (!container) return;
-
-      let stepsHtml = data.steps.map((step, idx) => `
-        <div class="p-3.5 rounded-lg bg-surface-container-high/70 border border-outline-variant/30 flex flex-col sm:flex-row sm:items-center justify-between gap-2.5">
-          <div class="flex items-center gap-3">
-            <span class="w-6 h-6 rounded-full bg-secondary/20 border border-secondary/40 text-black dark:text-secondary flex items-center justify-center font-bold text-xs shrink-0">${idx + 1}</span>
-            <div>
-              <div class="text-on-surface font-semibold text-xs sm:text-sm">${step.name}</div>
-              <div class="text-xs text-on-surface-variant dark:text-[#C6C6CD] font-mono mt-0.5">${step.tech}</div>
-            </div>
-          </div>
-          <div class="text-left sm:text-right font-mono text-xs shrink-0 sm:ml-3">
-            <span class="inline-flex items-center px-2 py-0.5 rounded bg-secondary/10 border border-secondary/30 text-black dark:text-secondary font-bold text-xs">${step.status}</span>
-            ${step.time ? `<div class="text-xs text-on-surface-variant dark:text-white/70 mt-0.5">${step.time}</div>` : ''}
-          </div>
-        </div>
-      `).join('');
-
-      container.innerHTML = `
-        <div class="col-span-12 max-w-3xl mx-auto w-full space-y-4">
-          <h3 class="font-display text-2xl font-bold text-on-surface">${data.title}</h3>
-          <p class="font-sans text-sm sm:text-base text-on-surface-variant dark:text-[#D1D5DB]">${data.subtitle}</p>
-
-          <div class="p-3 rounded-lg bg-surface-container-lowest border border-outline-variant/30 font-mono text-xs text-on-surface break-words">
-            <span class="text-black dark:text-secondary font-bold">Trigger:</span> <span class="text-on-surface-variant dark:text-[#E0E3E5]">${data.trigger}</span>
-          </div>
-
-          <div class="space-y-2.5 pt-2">
-            ${stepsHtml}
-            ${data.summary ? `
-              <div class="mt-3 p-2.5 rounded-lg bg-surface-container-lowest/90 border border-secondary/25 flex items-center justify-center gap-2 font-mono text-xs text-on-surface dark:text-white/90 font-medium text-center">
-                <span class="w-1.5 h-1.5 rounded-full bg-secondary animate-pulse shrink-0"></span>
-                <span>${data.summary}</span>
-              </div>
-            ` : ''}
-          </div>
-        </div>
-      `;
-    }
-
-    function setSimTab(key) {
-      ['finance', 'crm', 'rag'].forEach(k => {
-        const btn = document.getElementById(`tab-btn-${k}`);
-        if (btn) {
-          if (k === key) {
-            btn.className = "w-full py-3 px-3 sm:px-4 rounded-lg font-bold transition-all text-center bg-secondary text-on-secondary shadow-[0_0_15px_rgba(34,211,238,0.35)] min-h-[44px] flex items-center justify-center";
-          } else {
-            btn.className = "w-full py-3 px-3 sm:px-4 rounded-lg font-bold transition-all text-center text-on-surface-variant dark:text-white/80 hover:text-secondary min-h-[44px] flex items-center justify-center";
-          }
-        }
-      });
-      renderSimContent(key);
-    }
-
-    // Initialize Simulator with CRM Funnel
-    renderSimContent('crm');
-
-    // 5. ROI & Time Savings Calculator Logic
+    // 4. ROI & Time Savings Calculator Logic
     function updateRoiCalculation(hours) {
       const h = parseInt(hours, 10);
       document.getElementById('sliderHoursDisplay').innerText = `${h} hrs / week`;
@@ -842,11 +762,6 @@
       // Hourly rate S$35 * 85% efficiency * 4.33 weeks
       const monthlySavings = Math.round(h * 35 * 4.33 * 0.85);
       document.getElementById('monthlySavingsDisplay').innerText = `S$ ${monthlySavings.toLocaleString()} / mo`;
-      
-      const btn = document.getElementById('roiWhatsAppBtn');
-      if (btn) {
-        btn.href = `https://wa.me/6589076453?text=Hi%20ProjectAI,%20I%20calculated%20${h}%20hrs/week%20of%20manual%20work%20(Est.%20S$${monthlySavings.toLocaleString()}/mo%20savings).%20I%20would%20like%20to%20discuss%20an%20automation%20blueprint.`;
-      }
     }
 
     // 6. Accordion Toggle
